@@ -1,7 +1,10 @@
 
   create or replace   view DBT_CORTEX_LLMS.STAGE.stg_product_reviews
   
-   as (
+  
+  
+  
+  as (
     -- Staging model for product reviews
 -- This model extracts and standardizes product review information from the raw JSON data
 -- Fields are cast to appropriate data types and renamed for clarity

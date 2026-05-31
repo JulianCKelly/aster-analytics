@@ -4,7 +4,7 @@
 
 create or replace transient table DBT_CORTEX_LLMS.ANALYTICS.fact_support_tickets
     
-
+    
     
     as (-- Fact model for support tickets with sentiment analysis and priority classification
 -- This model enriches support tickets with AI-generated sentiment scores and priority levels

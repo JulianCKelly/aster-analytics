@@ -4,7 +4,7 @@
 
 create or replace transient table DBT_CORTEX_LLMS.ANALYTICS.insight_summaries
     
-
+    
     
     as (-- Insight summaries model that generates AI summaries of customer interactions
 -- This model uses Snowflake Cortex to generate concise summaries of customer behavior

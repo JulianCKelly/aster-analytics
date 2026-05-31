@@ -4,7 +4,7 @@
 
 create or replace transient table DBT_CORTEX_LLMS.ANALYTICS.customer_persona_signals
     
-
+    
     
     as (-- Customer persona signals model that analyzes customer behavior patterns
 -- This model combines various signals to classify customer personas and predict behavior

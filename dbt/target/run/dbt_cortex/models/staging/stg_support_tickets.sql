@@ -1,7 +1,10 @@
 
   create or replace   view DBT_CORTEX_LLMS.STAGE.stg_support_tickets
   
-   as (
+  
+  
+  
+  as (
     -- Staging model for support tickets
 -- This model extracts and standardizes support ticket information from the raw JSON data
 -- Fields are cast to appropriate data types and renamed for clarity

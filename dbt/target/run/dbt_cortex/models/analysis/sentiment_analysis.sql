@@ -4,7 +4,7 @@
 
 create or replace transient table DBT_CORTEX_LLMS.ANALYTICS.sentiment_analysis
     
-
+    
     
     as (-- Sentiment analysis model that combines sentiment from all sources
 -- This model aggregates sentiment scores from interactions, reviews, and tickets

@@ -4,7 +4,7 @@
 
 create or replace transient table DBT_CORTEX_LLMS.ANALYTICS.ticket_patterns
     
-
+    
     
     as (-- Ticket patterns model that analyzes support ticket patterns
 -- This model aggregates ticket information to identify patterns and trends

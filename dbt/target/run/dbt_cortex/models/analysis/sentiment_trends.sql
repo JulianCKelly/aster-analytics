@@ -4,7 +4,7 @@
 
 create or replace transient table DBT_CORTEX_LLMS.ANALYTICS.sentiment_trends
     
-
+    
     
     as (-- Sentiment trends model that analyzes sentiment patterns over time
 -- This model calculates sentiment trends, volatility, and historical patterns

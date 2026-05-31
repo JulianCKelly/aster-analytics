@@ -1,7 +1,10 @@
 
   create or replace   view DBT_CORTEX_LLMS.STAGE.stg_customer_interactions
   
-   as (
+  
+  
+  
+  as (
     -- Staging model for customer interactions
 -- This model extracts and standardizes customer interaction information from the raw JSON data
 -- Fields are cast to appropriate data types and renamed for clarity

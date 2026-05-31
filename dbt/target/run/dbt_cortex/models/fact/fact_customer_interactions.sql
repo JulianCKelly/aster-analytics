@@ -4,7 +4,7 @@
 
 create or replace transient table DBT_CORTEX_LLMS.ANALYTICS.fact_customer_interactions
     
-
+    
     
     as (-- Fact model for customer interactions with sentiment analysis
 -- This model enriches customer interactions with AI-generated sentiment scores

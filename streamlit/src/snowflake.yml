@@ -1,0 +1,7 @@
+definition_version: 1
+streamlit:
+  name: customer_intelligence_hub
+  stage: streamlit_app_stage
+  query_warehouse: CORTEX_WH
+  main_file: streamlit_app.py
+  title: "Customer Intelligence Hub"

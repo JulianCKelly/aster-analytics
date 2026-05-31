@@ -1,7 +1,10 @@
 
   create or replace   view DBT_CORTEX_LLMS.STAGE.stg_customers
   
-   as (
+  
+  
+  
+  as (
     -- Staging model for customer data
 -- This model extracts and standardizes customer information from the raw JSON data
 -- Fields are cast to appropriate data types and renamed for clarity

@@ -4,7 +4,7 @@
 
 create or replace transient table DBT_CORTEX_LLMS.ANALYTICS.fact_product_reviews
     
-
+    
     
     as (-- Fact model for product reviews with sentiment analysis and translations
 -- This model enriches product reviews with AI-generated sentiment scores and translations

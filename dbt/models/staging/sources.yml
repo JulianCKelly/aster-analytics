@@ -5,34 +5,34 @@ sources:
     database: DBT_CORTEX_LLMS
     schema: STAGE
     tables:
-      - name: customer_interactions
-        description: "Raw customer interactions data in JSON format"
+      - name: patients
+        description: "Cross-border patient registry with origin and US identifiers"
         columns:
-          - name: data
-            description: "JSON data containing customer interaction details"
+          - name: patient_id
             tests:
               - not_null
-      
-      - name: product_reviews
-        description: "Raw product reviews data in JSON format"
+              - unique
+
+      - name: clinical_encounters
+        description: "Clinical encounters across origin and US facilities"
         columns:
-          - name: data
-            description: "JSON data containing product review details"
+          - name: encounter_id
             tests:
               - not_null
-      
-      - name: support_tickets
-        description: "Raw support tickets data in JSON format"
+              - unique
+
+      - name: lab_results
+        description: "Lab results from origin and US facilities with LOINC codes"
         columns:
-          - name: data
-            description: "JSON data containing support ticket details"
+          - name: lab_id
             tests:
               - not_null
-      
-      - name: customers
-        description: "Raw customer data in JSON format"
+              - unique
+
+      - name: care_gaps
+        description: "Identified care gaps from cross-border record fragmentation"
         columns:
-          - name: data
-            description: "JSON data containing customer details"
+          - name: gap_id
             tests:
-              - not_null 
+              - not_null
+              - unique
