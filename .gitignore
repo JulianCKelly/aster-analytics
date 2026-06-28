@@ -94,4 +94,4 @@ profiles.yml
 *_token.txt
 *_token.*
 api_key.txt
-api_key.* 
+api_key.* dbt/target/
