@@ -95,3 +95,6 @@ profiles.yml
 *_token.*
 api_key.txt
 api_key.* dbt/target/
+synthea/synthea.jar
+synthea/output/
+synthea/metadata/
