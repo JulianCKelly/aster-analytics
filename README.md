@@ -122,7 +122,7 @@ Nine synthetic patients representing common cross-border care scenarios. Four ar
 
 ## Related
 
-[aster-health](https://github.com/JulianCKelly/aster-health) — the patient-facing interface layer this pipeline is designed to serve.
+[aster-health](https://github.com/JulianCKelly/aster-health) — the clinical operations interface this pipeline is designed to serve.
 
 ---
 
