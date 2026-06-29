@@ -1,10 +1,8 @@
 # Aster Analytics
 
-**Cross-border clinical intelligence pipeline — Snowflake Cortex + dbt + Streamlit**
+Cross-border clinical intelligence pipeline — Snowflake Cortex + dbt + Streamlit + Dagster
 
 Built as the data infrastructure layer for [Aster Health](https://github.com/JulianCKelly/aster-health), a platform that reconstructs fragmented medical histories for patients who have received care across multiple countries.
-
----
 
 ## The Problem
 
@@ -12,39 +10,54 @@ When someone immigrates, their medical history doesn't follow them. A patient wh
 
 This pipeline exists to change that.
 
----
-
 ## What This Does
 
-Aster Analytics ingests fragmented clinical records from multiple countries, runs Snowflake Cortex LLM functions across each encounter, and surfaces structured care gap intelligence through a Streamlit dashboard.
+Aster Analytics ingests fragmented clinical records from multiple countries, runs Snowflake Cortex LLM functions across each encounter, and surfaces structured care gap intelligence through a Streamlit dashboard. A Dagster orchestration layer automates the full pipeline end to end.
 
-**Pipeline:**
-- Raw clinical records (encounters, labs, care gaps) loaded into Snowflake
+Pipeline:
+
+- Synthea FHIR R4 bundles generated and transformed into staging records via a custom Python ingestion layer
+- Raw clinical records loaded into Snowflake staging tables via MERGE upsert with RSA key-pair auth
 - dbt staging models normalize and join across patient and encounter grain
-- Cortex `COMPLETE()` runs risk analysis on each encounter and generates patient continuity profiles
+- Cortex COMPLETE() runs risk analysis on each encounter and generates patient continuity profiles
 - Mart models produce care gap severity rankings, cross-border encounter flags, and population-level trend signals
 - Streamlit dashboard renders the full picture across five tabs
+- Dagster orchestrates the full pipeline: FHIR generation, Snowflake load, and dbt run as a three-asset DAG
 
-**Dashboard tabs:**
-- **Care Gaps** — active gaps ranked by severity, filtered by CRITICAL/HIGH/MEDIUM/LOW, with Cortex-generated analysis per gap
+Dashboard tabs:
+
+- **Care Gaps** — active gaps ranked by severity (CRITICAL/HIGH/MEDIUM/LOW), with Cortex-generated analysis per gap
 - **Patient Profiles** — Cortex-synthesized continuity profile per patient across all available records
 - **Encounters** — encounter-level risk signals with cross-border filter
 - **Labs** — lab results with abnormal flags and Cortex clinical insight summaries
 - **Trends** — population-level gap patterns by country of origin and gap type
-
----
 
 ## Stack
 
 | Layer | Tool |
 |---|---|
 | Data warehouse | Snowflake |
-| LLM functions | Snowflake Cortex (`COMPLETE`) |
+| LLM functions | Snowflake Cortex (COMPLETE) |
 | Transformation | dbt Core |
+| FHIR ingestion | Python (Synthea + custom transformer) |
+| Orchestration | Dagster (schedule + file sensor) |
 | Dashboard | Streamlit |
 | Auth | RSA key-pair |
 
----
+## Orchestration
+
+Dagster manages three assets in sequence:
+
+    synthea_fhir_files -> snowflake_stage_load -> dbt_clinical_models
+
+- **synthea_fhir_files** — generates synthetic FHIR R4 patient bundles using Synthea
+- **snowflake_stage_load** — transforms bundles and upserts into Snowflake staging tables
+- **dbt_clinical_models** — runs dbt to materialize all fact and analysis models
+
+Automation:
+
+- **daily_pipeline_schedule** — runs the full pipeline at 06:00 UTC
+- **new_fhir_files_sensor** — triggers a run when new FHIR bundles appear in the output directory
 
 ## Data Model
 
@@ -70,11 +83,9 @@ Aster Analytics ingests fragmented clinical records from multiple countries, run
         ├── clinical_insight_summaries.sql -- Cortex lab interpretation per patient
         └── care_continuity_trends.sql     -- population-level gap trends
 
----
-
 ## Synthetic Patients
 
-The pipeline runs on four synthetic patients representing common cross-border care scenarios:
+Nine synthetic patients representing common cross-border care scenarios. Four are hand-crafted clinical narratives; five are Synthea-generated FHIR R4 bundles with cross-border immigration overlays applied during ingestion.
 
 | Patient | Origin | US Insurer | Primary Gap |
 |---|---|---|---|
@@ -82,37 +93,32 @@ The pipeline runs on four synthetic patients representing common cross-border ca
 | Carlos Mendoza | Mexico | Uninsured | Cardiac history unknown at ED presentation (NSTEMI) |
 | Amara Okafor | Nigeria | Covered California | Hypothyroidism management, language barrier risk |
 | Wei Zhang | China | Medicare | Osteoporosis therapy duration unknown, MCI baseline absent |
-
----
+| Corie Sofia Kohler | India | Covered California | Synthea-generated, immigration overlay applied |
+| Ezekiel Leslie Walter | Mexico | Uninsured | Synthea-generated, immigration overlay applied |
+| Jona Bonnie Schoen | Philippines | Employer | Synthea-generated, immigration overlay applied |
+| Shalanda Kelsie Berge | China | Medicare | Synthea-generated, immigration overlay applied |
+| Wilfredo Isaiah Fritsch | Nigeria | Covered California | Synthea-generated, immigration overlay applied |
 
 ## Setup
 
-```bash
-# 1. Clone and configure
-git clone https://github.com/JulianCKelly/aster-analytics.git
-cd aster-analytics
+    # 1. Clone and configure
+    git clone https://github.com/JulianCKelly/aster-analytics.git
+    cd aster-analytics
 
-# 2. Create Snowflake environment
-# Run snowflake_sql/ scripts to create database, schemas, warehouse, role
+    # 2. Create Snowflake environment
+    # Run snowflake_sql/ scripts to create database, schemas, warehouse, role
 
-# 3. Load clinical seed data
-# Run INSERT statements in snowflake_sql/ for PATIENTS, CLINICAL_ENCOUNTERS, LAB_RESULTS, CARE_GAPS
+    # 3. Configure dbt
+    # Add Snowflake credentials to ~/.dbt/profiles.yml
 
-# 4. Configure dbt
-# Add Snowflake credentials to ~/.dbt/profiles.yml
+    # 4. Run pipeline manually
+    cd dbt && dbt deps && dbt run && dbt test
 
-# 5. Run pipeline
-cd dbt
-dbt deps
-dbt run
-dbt test
+    # 5. Launch dashboard
+    cd ../streamlit/src && streamlit run streamlit_app.py
 
-# 6. Launch dashboard
-cd ../streamlit/src
-streamlit run streamlit_app.py
-```
-
----
+    # 6. Or run via Dagster
+    cd .. && dagster dev -f dagster_pipeline/definitions.py
 
 ## Related
 
@@ -120,4 +126,4 @@ streamlit run streamlit_app.py
 
 ---
 
-*Demo only. Synthetic data. Not for use with real patient information.*
+Demo only. Synthetic data. Not for use with real patient information.
