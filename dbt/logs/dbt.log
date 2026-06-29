@@ -11741,3 +11741,1629 @@ LEFT JOIN gap_agg g ON p.patient_id = g.patient_id
 [0m19:30:40.622102 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ebf76b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ee76450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ee76330>]}
 [0m19:30:40.622303 [debug] [MainThread]: Flushing usage events
 [0m19:30:41.291003 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:49:57.179536 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108821b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108775290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108922c10>]}
+
+
+============================== 21:49:57.182904 | 417e5d36-9a12-42a9-8eda-8f81a9e9fd8e ==============================
+[0m21:49:57.182904 [info ] [MainThread]: Running with dbt=1.11.11
+[0m21:49:57.183241 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'debug': 'False', 'warn_error': 'None', 'quiet': 'False', 'use_colors': 'True', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'printer_width': '80', 'profiles_dir': '/Users/juliancharlankelly/.dbt', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'log_format': 'default', 'log_cache_events': 'False', 'target_path': 'None', 'cache_selected_only': 'False', 'version_check': 'True', 'log_path': '/Users/juliancharlankelly/aster-analytics/dbt/logs', 'indirect_selection': 'eager', 'write_json': 'True', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True'}
+[0m21:49:57.186003 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m21:49:57.186264 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "dbt_cortex", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+[0m21:49:57.417315 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.3031593, "process_in_blocks": "0", "process_kernel_time": 0.198433, "process_mem_max_rss": "122224640", "process_out_blocks": "0", "process_user_time": 0.823853}
+[0m21:49:57.418910 [debug] [MainThread]: Command `dbt run` failed at 21:49:57.418626 after 0.31 seconds
+[0m21:49:57.420002 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102d3bbd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088fcdd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1084b3a90>]}
+[0m21:49:57.421028 [debug] [MainThread]: Flushing usage events
+[0m21:49:57.976070 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:51:54.869247 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111521f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111722590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111720490>]}
+
+
+============================== 21:51:54.872297 | 897d46f7-7785-4f25-bb28-869734cb2123 ==============================
+[0m21:51:54.872297 [info ] [MainThread]: Running with dbt=1.11.11
+[0m21:51:54.872598 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'partial_parse': 'True', 'write_json': 'True', 'static_parser': 'True', 'fail_fast': 'False', 'no_print': 'None', 'log_path': '/Users/juliancharlankelly/aster-analytics/dbt/logs', 'introspect': 'True', 'invocation_command': 'dbt run', 'use_colors': 'True', 'indirect_selection': 'eager', 'printer_width': '80', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'empty': 'False', 'log_format': 'default', 'use_experimental_parser': 'False', 'target_path': 'None', 'debug': 'False', 'profiles_dir': '/Users/juliancharlankelly/.dbt', 'version_check': 'True', 'warn_error': 'None'}
+[0m21:51:54.875348 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m21:51:54.875598 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "dbt_cortex", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+[0m21:51:54.877956 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.054228168, "process_in_blocks": "0", "process_kernel_time": 0.170579, "process_mem_max_rss": "119586816", "process_out_blocks": "0", "process_user_time": 0.644099}
+[0m21:51:54.878205 [debug] [MainThread]: Command `dbt run` failed at 21:51:54.878153 after 0.05 seconds
+[0m21:51:54.878395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1019a2f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11172b8d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111720510>]}
+[0m21:51:54.878576 [debug] [MainThread]: Flushing usage events
+[0m21:51:55.423730 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:53:31.067812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071cda90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10740f690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10740fc10>]}
+
+
+============================== 21:53:31.071083 | b2677911-f174-4889-b533-0e038994d581 ==============================
+[0m21:53:31.071083 [info ] [MainThread]: Running with dbt=1.11.11
+[0m21:53:31.071395 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/Users/juliancharlankelly/.dbt', 'static_parser': 'True', 'quiet': 'False', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/juliancharlankelly/aster-analytics/dbt/logs', 'write_json': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'empty': 'False', 'no_print': 'None', 'warn_error': 'None', 'cache_selected_only': 'False', 'introspect': 'True', 'printer_width': '80', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'version_check': 'True'}
+[0m21:53:31.304358 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m21:53:31.304668 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m21:53:31.304829 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m21:53:31.413144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b2677911-f174-4889-b533-0e038994d581', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1095a68d0>]}
+[0m21:53:31.448196 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b2677911-f174-4889-b533-0e038994d581', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070db850>]}
+[0m21:53:31.448984 [info ] [MainThread]: Registered adapter: snowflake=1.11.6
+[0m21:53:31.509845 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m21:53:31.594855 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 3 files changed.
+[0m21:53:31.595238 [debug] [MainThread]: Partial parsing: updated file: dbt_snowflake://macros/materializations/incremental.sql
+[0m21:53:31.595960 [debug] [MainThread]: Partial parsing: updated file: dbt_snowflake://macros/adapters.sql
+[0m21:53:31.596303 [debug] [MainThread]: Partial parsing: updated file: dbt_snowflake://macros/relations/table/create.sql
+[0m21:53:31.756549 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_cortex.semantic
+[0m21:53:31.763810 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b2677911-f174-4889-b533-0e038994d581', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a3ea10>]}
+[0m21:53:31.854227 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/juliancharlankelly/aster-analytics/dbt/target/manifest.json
+[0m21:53:31.856425 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/juliancharlankelly/aster-analytics/dbt/target/semantic_manifest.json
+[0m21:53:31.863542 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b2677911-f174-4889-b533-0e038994d581', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106360050>]}
+[0m21:53:31.863799 [info ] [MainThread]: Found 11 models, 8 data tests, 4 sources, 538 macros
+[0m21:53:31.864013 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b2677911-f174-4889-b533-0e038994d581', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104533d50>]}
+[0m21:53:31.865451 [info ] [MainThread]: 
+[0m21:53:31.865657 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m21:53:31.865787 [info ] [MainThread]: 
+[0m21:53:31.866018 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m21:53:31.868175 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_CORTEX_LLMS'
+[0m21:53:31.868389 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_CORTEX_LLMS'
+[0m21:53:31.902292 [debug] [ThreadPool]: Using snowflake connection "list_DBT_CORTEX_LLMS"
+[0m21:53:31.902550 [debug] [ThreadPool]: Using snowflake connection "list_DBT_CORTEX_LLMS"
+[0m21:53:31.902735 [debug] [ThreadPool]: On list_DBT_CORTEX_LLMS: show terse schemas in database DBT_CORTEX_LLMS
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "connection_name": "list_DBT_CORTEX_LLMS"} */
+[0m21:53:31.902880 [debug] [ThreadPool]: On list_DBT_CORTEX_LLMS: show terse schemas in database DBT_CORTEX_LLMS
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "connection_name": "list_DBT_CORTEX_LLMS"} */
+[0m21:53:31.903008 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:53:31.903120 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:53:32.916956 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.014 seconds
+[0m21:53:33.071159 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.168 seconds
+[0m21:53:33.079532 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DBT_CORTEX_LLMS, now list_DBT_CORTEX_LLMS_STAGE)
+[0m21:53:33.080600 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DBT_CORTEX_LLMS, now list_DBT_CORTEX_LLMS_ANALYTICS)
+[0m21:53:33.098764 [debug] [ThreadPool]: Using snowflake connection "list_DBT_CORTEX_LLMS_STAGE"
+[0m21:53:33.101943 [debug] [ThreadPool]: Using snowflake connection "list_DBT_CORTEX_LLMS_ANALYTICS"
+[0m21:53:33.102576 [debug] [ThreadPool]: On list_DBT_CORTEX_LLMS_STAGE: show objects in DBT_CORTEX_LLMS.STAGE
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "connection_name": "list_DBT_CORTEX_LLMS_STAGE"} */;
+[0m21:53:33.103208 [debug] [ThreadPool]: On list_DBT_CORTEX_LLMS_ANALYTICS: show objects in DBT_CORTEX_LLMS.ANALYTICS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "connection_name": "list_DBT_CORTEX_LLMS_ANALYTICS"} */;
+[0m21:53:33.338574 [debug] [ThreadPool]: SQL status: SUCCESS 16 in 0.235 seconds
+[0m21:53:33.347083 [debug] [ThreadPool]: SQL status: SUCCESS 15 in 0.243 seconds
+[0m21:53:33.352107 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b2677911-f174-4889-b533-0e038994d581', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a2e1650>]}
+[0m21:53:33.357213 [debug] [Thread-2 (]: Began running node model.dbt_cortex.stg_care_gaps
+[0m21:53:33.357789 [debug] [Thread-3 (]: Began running node model.dbt_cortex.stg_clinical_encounters
+[0m21:53:33.358203 [debug] [Thread-4 (]: Began running node model.dbt_cortex.stg_lab_results
+[0m21:53:33.358501 [debug] [Thread-5 (]: Began running node model.dbt_cortex.stg_patients
+[0m21:53:33.358849 [info ] [Thread-2 (]: 1 of 11 START sql view model STAGE.stg_care_gaps ............................... [RUN]
+[0m21:53:33.359197 [info ] [Thread-3 (]: 2 of 11 START sql view model STAGE.stg_clinical_encounters ..................... [RUN]
+[0m21:53:33.359503 [info ] [Thread-4 (]: 3 of 11 START sql view model STAGE.stg_lab_results ............................. [RUN]
+[0m21:53:33.359872 [info ] [Thread-5 (]: 4 of 11 START sql view model STAGE.stg_patients ................................ [RUN]
+[0m21:53:33.360277 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_DBT_CORTEX_LLMS_STAGE, now model.dbt_cortex.stg_care_gaps)
+[0m21:53:33.360693 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_DBT_CORTEX_LLMS_ANALYTICS, now model.dbt_cortex.stg_clinical_encounters)
+[0m21:53:33.361108 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.dbt_cortex.stg_lab_results'
+[0m21:53:33.361482 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.dbt_cortex.stg_patients'
+[0m21:53:33.361795 [debug] [Thread-2 (]: Began compiling node model.dbt_cortex.stg_care_gaps
+[0m21:53:33.362093 [debug] [Thread-3 (]: Began compiling node model.dbt_cortex.stg_clinical_encounters
+[0m21:53:33.362372 [debug] [Thread-4 (]: Began compiling node model.dbt_cortex.stg_lab_results
+[0m21:53:33.362652 [debug] [Thread-5 (]: Began compiling node model.dbt_cortex.stg_patients
+[0m21:53:33.370268 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_cortex.stg_care_gaps"
+[0m21:53:33.372870 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_cortex.stg_clinical_encounters"
+[0m21:53:33.375092 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_cortex.stg_lab_results"
+[0m21:53:33.377250 [debug] [Thread-5 (]: Writing injected SQL for node "model.dbt_cortex.stg_patients"
+[0m21:53:33.378509 [debug] [Thread-2 (]: Began executing node model.dbt_cortex.stg_care_gaps
+[0m21:53:33.378815 [debug] [Thread-4 (]: Began executing node model.dbt_cortex.stg_lab_results
+[0m21:53:33.379091 [debug] [Thread-3 (]: Began executing node model.dbt_cortex.stg_clinical_encounters
+[0m21:53:33.379362 [debug] [Thread-5 (]: Began executing node model.dbt_cortex.stg_patients
+[0m21:53:33.399123 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_cortex.stg_care_gaps"
+[0m21:53:33.400842 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_cortex.stg_lab_results"
+[0m21:53:33.402343 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_cortex.stg_clinical_encounters"
+[0m21:53:33.403749 [debug] [Thread-5 (]: Writing runtime sql for node "model.dbt_cortex.stg_patients"
+[0m21:53:33.404748 [debug] [Thread-4 (]: Using snowflake connection "model.dbt_cortex.stg_lab_results"
+[0m21:53:33.405160 [debug] [Thread-3 (]: Using snowflake connection "model.dbt_cortex.stg_clinical_encounters"
+[0m21:53:33.405374 [debug] [Thread-4 (]: On model.dbt_cortex.stg_lab_results: create or replace   view DBT_CORTEX_LLMS.STAGE.stg_lab_results
+  
+  
+  
+  
+  as (
+    -- Staging model for lab results with LOINC standardization
+SELECT
+    lab_id,
+    patient_id,
+    collection_date,
+    facility,
+    country,
+    test_name,
+    loinc_code,
+    result_value,
+    unit,
+    reference_range,
+    flag,
+    source_format
+FROM DBT_CORTEX_LLMS.STAGE.lab_results
+  )
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.stg_lab_results"} */;
+[0m21:53:33.405748 [debug] [Thread-2 (]: Using snowflake connection "model.dbt_cortex.stg_care_gaps"
+[0m21:53:33.406123 [debug] [Thread-5 (]: Using snowflake connection "model.dbt_cortex.stg_patients"
+[0m21:53:33.406314 [debug] [Thread-3 (]: On model.dbt_cortex.stg_clinical_encounters: create or replace   view DBT_CORTEX_LLMS.STAGE.stg_clinical_encounters
+  
+  
+  
+  
+  as (
+    -- Staging model for clinical encounters across borders
+SELECT
+    encounter_id,
+    patient_id,
+    encounter_date,
+    facility,
+    country,
+    encounter_type,
+    provider_name,
+    chief_complaint,
+    assessment,
+    plan,
+    source_format
+FROM DBT_CORTEX_LLMS.STAGE.clinical_encounters
+  )
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.stg_clinical_encounters"} */;
+[0m21:53:33.406523 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m21:53:33.406742 [debug] [Thread-2 (]: On model.dbt_cortex.stg_care_gaps: create or replace   view DBT_CORTEX_LLMS.STAGE.stg_care_gaps
+  
+  
+  
+  
+  as (
+    -- Staging model for care gaps from cross-border fragmentation
+SELECT
+    gap_id,
+    patient_id,
+    identified_date,
+    gap_type,
+    description,
+    severity,
+    origin_country,
+    us_provider_aware,
+    status
+FROM DBT_CORTEX_LLMS.STAGE.care_gaps
+  )
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.stg_care_gaps"} */;
+[0m21:53:33.406960 [debug] [Thread-5 (]: On model.dbt_cortex.stg_patients: create or replace   view DBT_CORTEX_LLMS.STAGE.stg_patients
+  
+  
+  
+  
+  as (
+    -- Staging model for cross-border patient registry
+SELECT
+    patient_id,
+    full_name,
+    date_of_birth,
+    country_of_origin,
+    primary_language,
+    immigration_year,
+    current_mrn,
+    origin_mrn,
+    insurance_status
+FROM DBT_CORTEX_LLMS.STAGE.patients
+  )
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.stg_patients"} */;
+[0m21:53:33.471390 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m21:53:33.823395 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.416 seconds
+[0m21:53:33.846975 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.440 seconds
+[0m21:53:33.848710 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b2677911-f174-4889-b533-0e038994d581', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a55f250>]}
+[0m21:53:33.849158 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b2677911-f174-4889-b533-0e038994d581', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109557710>]}
+[0m21:53:33.849762 [info ] [Thread-2 (]: 1 of 11 OK created sql view model STAGE.stg_care_gaps .......................... [[32mSUCCESS 1[0m in 0.49s]
+[0m21:53:33.850189 [info ] [Thread-3 (]: 2 of 11 OK created sql view model STAGE.stg_clinical_encounters ................ [[32mSUCCESS 1[0m in 0.49s]
+[0m21:53:33.850586 [debug] [Thread-2 (]: Finished running node model.dbt_cortex.stg_care_gaps
+[0m21:53:33.850951 [debug] [Thread-3 (]: Finished running node model.dbt_cortex.stg_clinical_encounters
+[0m21:53:34.262458 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.856 seconds
+[0m21:53:34.266392 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b2677911-f174-4889-b533-0e038994d581', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1094fcc90>]}
+[0m21:53:34.267499 [info ] [Thread-4 (]: 3 of 11 OK created sql view model STAGE.stg_lab_results ........................ [[32mSUCCESS 1[0m in 0.91s]
+[0m21:53:34.268467 [debug] [Thread-4 (]: Finished running node model.dbt_cortex.stg_lab_results
+[0m21:53:34.282842 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.811 seconds
+[0m21:53:34.287517 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b2677911-f174-4889-b533-0e038994d581', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a5d5d90>]}
+[0m21:53:34.288664 [info ] [Thread-5 (]: 4 of 11 OK created sql view model STAGE.stg_patients ........................... [[32mSUCCESS 1[0m in 0.93s]
+[0m21:53:34.289643 [debug] [Thread-5 (]: Finished running node model.dbt_cortex.stg_patients
+[0m21:53:34.291240 [debug] [Thread-2 (]: Began running node model.dbt_cortex.clinical_insight_summaries
+[0m21:53:34.292079 [debug] [Thread-3 (]: Began running node model.dbt_cortex.fact_care_gaps
+[0m21:53:34.292719 [debug] [Thread-4 (]: Began running node model.dbt_cortex.fact_clinical_encounters
+[0m21:53:34.293348 [debug] [Thread-5 (]: Began running node model.dbt_cortex.fact_lab_results
+[0m21:53:34.294135 [info ] [Thread-2 (]: 5 of 11 START sql table model ANALYTICS.clinical_insight_summaries ............. [RUN]
+[0m21:53:34.294736 [info ] [Thread-3 (]: 6 of 11 START sql table model ANALYTICS.fact_care_gaps ......................... [RUN]
+[0m21:53:34.295310 [info ] [Thread-4 (]: 7 of 11 START sql table model ANALYTICS.fact_clinical_encounters ............... [RUN]
+[0m21:53:34.295879 [info ] [Thread-5 (]: 8 of 11 START sql table model ANALYTICS.fact_lab_results ....................... [RUN]
+[0m21:53:34.296438 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_cortex.stg_care_gaps, now model.dbt_cortex.clinical_insight_summaries)
+[0m21:53:34.296920 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dbt_cortex.stg_clinical_encounters, now model.dbt_cortex.fact_care_gaps)
+[0m21:53:34.297363 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dbt_cortex.stg_lab_results, now model.dbt_cortex.fact_clinical_encounters)
+[0m21:53:34.297808 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly model.dbt_cortex.stg_patients, now model.dbt_cortex.fact_lab_results)
+[0m21:53:34.298203 [debug] [Thread-2 (]: Began compiling node model.dbt_cortex.clinical_insight_summaries
+[0m21:53:34.298571 [debug] [Thread-3 (]: Began compiling node model.dbt_cortex.fact_care_gaps
+[0m21:53:34.298934 [debug] [Thread-4 (]: Began compiling node model.dbt_cortex.fact_clinical_encounters
+[0m21:53:34.299296 [debug] [Thread-5 (]: Began compiling node model.dbt_cortex.fact_lab_results
+[0m21:53:34.304043 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_cortex.clinical_insight_summaries"
+[0m21:53:34.308231 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_cortex.fact_care_gaps"
+[0m21:53:34.310580 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_cortex.fact_clinical_encounters"
+[0m21:53:34.313974 [debug] [Thread-5 (]: Writing injected SQL for node "model.dbt_cortex.fact_lab_results"
+[0m21:53:34.314841 [debug] [Thread-2 (]: Began executing node model.dbt_cortex.clinical_insight_summaries
+[0m21:53:34.327610 [debug] [Thread-3 (]: Began executing node model.dbt_cortex.fact_care_gaps
+[0m21:53:34.333324 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_cortex.clinical_insight_summaries"
+[0m21:53:34.335502 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_cortex.fact_care_gaps"
+[0m21:53:34.335774 [debug] [Thread-4 (]: Began executing node model.dbt_cortex.fact_clinical_encounters
+[0m21:53:34.336141 [debug] [Thread-5 (]: Began executing node model.dbt_cortex.fact_lab_results
+[0m21:53:34.338225 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_cortex.fact_clinical_encounters"
+[0m21:53:34.339004 [debug] [Thread-2 (]: Using snowflake connection "model.dbt_cortex.clinical_insight_summaries"
+[0m21:53:34.342052 [debug] [Thread-5 (]: Writing runtime sql for node "model.dbt_cortex.fact_lab_results"
+[0m21:53:34.342971 [debug] [Thread-3 (]: Using snowflake connection "model.dbt_cortex.fact_care_gaps"
+[0m21:53:34.343288 [debug] [Thread-2 (]: On model.dbt_cortex.clinical_insight_summaries: create or replace transient table DBT_CORTEX_LLMS.ANALYTICS.clinical_insight_summaries
+    
+    
+    
+    as (-- Cortex LLM: generate actionable insight summary per patient across all data
+SELECT
+    l.patient_id,
+    p.full_name,
+    COUNT(*) AS total_labs,
+    SUM(CASE WHEN l.flag = 'H' THEN 1 ELSE 0 END) AS abnormal_high,
+    SUM(CASE WHEN l.flag = 'L' THEN 1 ELSE 0 END) AS abnormal_low,
+    SNOWFLAKE.CORTEX.COMPLETE(
+        'mistral-7b',
+        'You are a clinical analyst. Summarize the key lab findings for this patient in 2-3 sentences, highlighting any abnormal results and clinical implications. Labs: ' ||
+        LISTAGG(l.test_name || ': ' || l.result_value || ' ' || COALESCE(l.unit, '') || ' (' || COALESCE(l.flag, 'N') || ')', ', ')
+    ) AS clinical_insight
+FROM DBT_CORTEX_LLMS.STAGE.stg_lab_results l
+LEFT JOIN DBT_CORTEX_LLMS.STAGE.stg_patients p ON l.patient_id = p.patient_id
+GROUP BY l.patient_id, p.full_name
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.clinical_insight_summaries"} */;
+[0m21:53:34.344061 [debug] [Thread-4 (]: Using snowflake connection "model.dbt_cortex.fact_clinical_encounters"
+[0m21:53:34.344346 [debug] [Thread-3 (]: On model.dbt_cortex.fact_care_gaps: create or replace transient table DBT_CORTEX_LLMS.ANALYTICS.fact_care_gaps
+    
+    
+    
+    as (-- Fact table joining care gaps with patient context
+SELECT
+    g.gap_id,
+    g.patient_id,
+    p.full_name,
+    p.country_of_origin,
+    p.primary_language,
+    p.insurance_status,
+    g.identified_date,
+    g.gap_type,
+    g.description,
+    g.severity,
+    g.origin_country,
+    g.us_provider_aware,
+    g.status,
+    CASE WHEN g.severity = 'CRITICAL' THEN 1
+         WHEN g.severity = 'HIGH' THEN 2
+         WHEN g.severity = 'MEDIUM' THEN 3
+         ELSE 4 END AS severity_rank,
+    SNOWFLAKE.CORTEX.COMPLETE(
+        'mistral-7b',
+        CONCAT(
+            'You are a clinical care coordinator reviewing a cross-border care gap. ',
+            'Patient: ', p.full_name, ' (', p.country_of_origin, ' -> USA). ',
+            'Gap type: ', g.gap_type, '. Severity: ', g.severity, '. ',
+            'Description: ', g.description, '. ',
+            'Provider aware: ', IFF(g.us_provider_aware, 'Yes', 'No'), '. ',
+            'In 2-3 sentences, summarize the clinical risk and recommended action.'
+        )
+    ) AS gap_analysis
+FROM DBT_CORTEX_LLMS.STAGE.stg_care_gaps g
+LEFT JOIN DBT_CORTEX_LLMS.STAGE.stg_patients p ON g.patient_id = p.patient_id
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.fact_care_gaps"} */;
+[0m21:53:34.345291 [debug] [Thread-5 (]: Using snowflake connection "model.dbt_cortex.fact_lab_results"
+[0m21:53:34.345526 [debug] [Thread-4 (]: On model.dbt_cortex.fact_clinical_encounters: create or replace transient table DBT_CORTEX_LLMS.ANALYTICS.fact_clinical_encounters
+    
+    
+    
+    as (SELECT
+    e.encounter_id,
+    e.patient_id,
+    p.full_name,
+    p.country_of_origin,
+    p.primary_language,
+    p.immigration_year,
+    e.encounter_date,
+    e.facility,
+    e.country,
+    e.encounter_type,
+    e.provider_name,
+    e.chief_complaint,
+    e.assessment,
+    e.plan,
+    e.source_format,
+    CASE WHEN e.country != p.country_of_origin THEN TRUE ELSE FALSE END AS is_cross_border
+FROM DBT_CORTEX_LLMS.STAGE.stg_clinical_encounters e
+LEFT JOIN DBT_CORTEX_LLMS.STAGE.stg_patients p ON e.patient_id = p.patient_id
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.fact_clinical_encounters"} */;
+[0m21:53:34.346286 [debug] [Thread-5 (]: On model.dbt_cortex.fact_lab_results: create or replace transient table DBT_CORTEX_LLMS.ANALYTICS.fact_lab_results
+    
+    
+    
+    as (-- Fact table joining labs with patient context
+SELECT
+    l.lab_id,
+    l.patient_id,
+    p.full_name,
+    p.country_of_origin,
+    p.primary_language,
+    l.collection_date,
+    l.facility,
+    l.country,
+    l.test_name,
+    l.loinc_code,
+    l.result_value,
+    l.unit,
+    l.reference_range,
+    l.flag,
+    l.source_format,
+    CASE WHEN l.flag = 'H' THEN 'Elevated'
+         WHEN l.flag = 'L' THEN 'Low'
+         ELSE 'Normal' END AS result_status,
+    CASE WHEN l.country != p.country_of_origin THEN TRUE ELSE FALSE END AS is_cross_border
+FROM DBT_CORTEX_LLMS.STAGE.stg_lab_results l
+LEFT JOIN DBT_CORTEX_LLMS.STAGE.stg_patients p ON l.patient_id = p.patient_id
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.fact_lab_results"} */;
+[0m21:53:36.092985 [debug] [Thread-5 (]: SQL status: SUCCESS 16 in 1.745 seconds
+[0m21:53:36.096833 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b2677911-f174-4889-b533-0e038994d581', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a5f2690>]}
+[0m21:53:36.098212 [info ] [Thread-5 (]: 8 of 11 OK created sql table model ANALYTICS.fact_lab_results .................. [[32mSUCCESS 16[0m in 1.80s]
+[0m21:53:36.098901 [debug] [Thread-5 (]: Finished running node model.dbt_cortex.fact_lab_results
+[0m21:53:36.107956 [debug] [Thread-4 (]: SQL status: SUCCESS 13 in 1.761 seconds
+[0m21:53:36.112361 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b2677911-f174-4889-b533-0e038994d581', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a765250>]}
+[0m21:53:36.113515 [info ] [Thread-4 (]: 7 of 11 OK created sql table model ANALYTICS.fact_clinical_encounters .......... [[32mSUCCESS 13[0m in 1.81s]
+[0m21:53:36.114271 [debug] [Thread-4 (]: Finished running node model.dbt_cortex.fact_clinical_encounters
+[0m21:53:36.114929 [debug] [Thread-5 (]: Began running node model.dbt_cortex.encounter_risk_analysis
+[0m21:53:36.115454 [info ] [Thread-5 (]: 9 of 11 START sql table model ANALYTICS.encounter_risk_analysis ................ [RUN]
+[0m21:53:36.116022 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly model.dbt_cortex.fact_lab_results, now model.dbt_cortex.encounter_risk_analysis)
+[0m21:53:36.116517 [debug] [Thread-5 (]: Began compiling node model.dbt_cortex.encounter_risk_analysis
+[0m21:53:36.121856 [debug] [Thread-5 (]: Writing injected SQL for node "model.dbt_cortex.encounter_risk_analysis"
+[0m21:53:36.123847 [debug] [Thread-5 (]: Began executing node model.dbt_cortex.encounter_risk_analysis
+[0m21:53:36.128470 [debug] [Thread-5 (]: Writing runtime sql for node "model.dbt_cortex.encounter_risk_analysis"
+[0m21:53:36.129907 [debug] [Thread-5 (]: Using snowflake connection "model.dbt_cortex.encounter_risk_analysis"
+[0m21:53:36.130233 [debug] [Thread-5 (]: On model.dbt_cortex.encounter_risk_analysis: create or replace transient table DBT_CORTEX_LLMS.ANALYTICS.encounter_risk_analysis
+    
+    
+    
+    as (SELECT
+    f.encounter_id,
+    f.patient_id,
+    f.full_name,
+    f.country_of_origin,
+    f.primary_language,
+    f.encounter_date,
+    f.facility,
+    f.country,
+    f.encounter_type,
+    f.provider_name,
+    f.chief_complaint,
+    f.assessment,
+    f.plan,
+    f.source_format,
+    f.is_cross_border,
+    SNOWFLAKE.CORTEX.COMPLETE(
+        'mistral-7b',
+        'You are a clinical risk analyst. Given this encounter assessment, identify any cross-border care continuity risks in 2-3 sentences. Assessment: ' || f.assessment
+    ) AS risk_analysis
+FROM DBT_CORTEX_LLMS.ANALYTICS.fact_clinical_encounters f
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.encounter_risk_analysis"} */;
+[0m21:53:40.508924 [debug] [Thread-3 (]: SQL status: SUCCESS 28 in 6.163 seconds
+[0m21:53:40.514194 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b2677911-f174-4889-b533-0e038994d581', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a2aa10>]}
+[0m21:53:40.515288 [info ] [Thread-3 (]: 6 of 11 OK created sql table model ANALYTICS.fact_care_gaps .................... [[32mSUCCESS 28[0m in 6.22s]
+[0m21:53:40.515973 [debug] [Thread-3 (]: Finished running node model.dbt_cortex.fact_care_gaps
+[0m21:53:40.516770 [debug] [Thread-4 (]: Began running node model.dbt_cortex.care_continuity_trends
+[0m21:53:40.517238 [debug] [Thread-3 (]: Began running node model.dbt_cortex.patient_profile_signals
+[0m21:53:40.518112 [info ] [Thread-4 (]: 10 of 11 START sql table model ANALYTICS.care_continuity_trends ................ [RUN]
+[0m21:53:40.518786 [info ] [Thread-3 (]: 11 of 11 START sql table model ANALYTICS.patient_profile_signals ............... [RUN]
+[0m21:53:40.519454 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dbt_cortex.fact_clinical_encounters, now model.dbt_cortex.care_continuity_trends)
+[0m21:53:40.519985 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dbt_cortex.fact_care_gaps, now model.dbt_cortex.patient_profile_signals)
+[0m21:53:40.520435 [debug] [Thread-4 (]: Began compiling node model.dbt_cortex.care_continuity_trends
+[0m21:53:40.520784 [debug] [Thread-3 (]: Began compiling node model.dbt_cortex.patient_profile_signals
+[0m21:53:40.529405 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_cortex.care_continuity_trends"
+[0m21:53:40.534799 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_cortex.patient_profile_signals"
+[0m21:53:40.536180 [debug] [Thread-3 (]: Began executing node model.dbt_cortex.patient_profile_signals
+[0m21:53:40.536659 [debug] [Thread-4 (]: Began executing node model.dbt_cortex.care_continuity_trends
+[0m21:53:40.540228 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_cortex.patient_profile_signals"
+[0m21:53:40.543294 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_cortex.care_continuity_trends"
+[0m21:53:40.545660 [debug] [Thread-3 (]: Using snowflake connection "model.dbt_cortex.patient_profile_signals"
+[0m21:53:40.546160 [debug] [Thread-3 (]: On model.dbt_cortex.patient_profile_signals: create or replace transient table DBT_CORTEX_LLMS.ANALYTICS.patient_profile_signals
+    
+    
+    
+    as (-- Cortex LLM: synthesize a clinical profile signal per patient
+WITH encounter_agg AS (
+    SELECT
+        patient_id,
+        COUNT(*) AS total_encounters,
+        COUNT(CASE WHEN is_cross_border THEN 1 END) AS cross_border_encounters,
+        MIN(encounter_date) AS first_encounter,
+        MAX(encounter_date) AS last_encounter,
+        LISTAGG(assessment, ' | ') AS all_assessments
+    FROM DBT_CORTEX_LLMS.ANALYTICS.fact_clinical_encounters
+    GROUP BY patient_id
+),
+gap_agg AS (
+    SELECT
+        patient_id,
+        COUNT(*) AS total_gaps,
+        COUNT(CASE WHEN severity IN ('CRITICAL','HIGH') THEN 1 END) AS high_severity_gaps,
+        LISTAGG(gap_type, ', ') AS gap_types
+    FROM DBT_CORTEX_LLMS.ANALYTICS.fact_care_gaps
+    GROUP BY patient_id
+)
+SELECT
+    p.patient_id,
+    p.full_name,
+    p.country_of_origin,
+    p.primary_language,
+    p.insurance_status,
+    p.immigration_year,
+    e.total_encounters,
+    e.cross_border_encounters,
+    e.first_encounter,
+    e.last_encounter,
+    g.total_gaps,
+    g.high_severity_gaps,
+    g.gap_types,
+    SNOWFLAKE.CORTEX.COMPLETE('mixtral-8x7b',
+        CONCAT(
+            'You are a care coordinator building a patient profile for a cross-border immigrant patient. ',
+            'Patient immigrated from ', p.country_of_origin, ' in ', p.immigration_year::VARCHAR, '. ',
+            'Language: ', p.primary_language, '. Insurance: ', p.insurance_status, '. ',
+            'They have ', e.total_encounters::VARCHAR, ' recorded encounters and ',
+            g.total_gaps::VARCHAR, ' care gaps including ', g.high_severity_gaps::VARCHAR, ' high severity. ',
+            'Gap types: ', COALESCE(g.gap_types, 'none'), '. ',
+            'Clinical history: ', COALESCE(e.all_assessments, 'none'), '. ',
+            'In 2-3 sentences, summarize this patient''s care continuity profile and top priority. ',
+            'Be direct and clinical.'
+        )
+    ) AS patient_profile
+FROM DBT_CORTEX_LLMS.STAGE.stg_patients p
+LEFT JOIN encounter_agg e ON p.patient_id = e.patient_id
+LEFT JOIN gap_agg g ON p.patient_id = g.patient_id
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.patient_profile_signals"} */;
+[0m21:53:40.547351 [debug] [Thread-4 (]: Using snowflake connection "model.dbt_cortex.care_continuity_trends"
+[0m21:53:40.548073 [debug] [Thread-4 (]: On model.dbt_cortex.care_continuity_trends: create or replace transient table DBT_CORTEX_LLMS.ANALYTICS.care_continuity_trends
+    
+    
+    
+    as (-- Care continuity trend analysis: cross-border gap patterns by country and type
+SELECT
+    g.origin_country,
+    g.gap_type,
+    COUNT(*) AS gap_count,
+    ROUND(
+        SUM(CASE WHEN g.us_provider_aware = FALSE THEN 1 ELSE 0 END) * 100.0 / COUNT(*),
+        1
+    ) AS pct_provider_unaware,
+    SNOWFLAKE.CORTEX.COMPLETE(
+        'mistral-7b',
+        'You are a health equity analyst. Given this pattern of care gaps, summarize the systemic risk in 2 sentences. Country: ' || g.origin_country ||
+        ', Gap type: ' || g.gap_type ||
+        ', Total gaps: ' || COUNT(*) ||
+        ', Provider unaware rate: ' || ROUND(SUM(CASE WHEN g.us_provider_aware = FALSE THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 1) || '%'
+    ) AS trend_insight
+FROM DBT_CORTEX_LLMS.ANALYTICS.fact_care_gaps g
+GROUP BY g.origin_country, g.gap_type
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.care_continuity_trends"} */;
+[0m21:53:40.562638 [debug] [Thread-2 (]: SQL status: SUCCESS 9 in 6.218 seconds
+[0m21:53:40.564433 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b2677911-f174-4889-b533-0e038994d581', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a3d1f90>]}
+[0m21:53:40.564991 [info ] [Thread-2 (]: 5 of 11 OK created sql table model ANALYTICS.clinical_insight_summaries ........ [[32mSUCCESS 9[0m in 6.27s]
+[0m21:53:40.565473 [debug] [Thread-2 (]: Finished running node model.dbt_cortex.clinical_insight_summaries
+[0m21:53:46.501885 [debug] [Thread-3 (]: SQL status: SUCCESS 10 in 5.954 seconds
+[0m21:53:46.507100 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b2677911-f174-4889-b533-0e038994d581', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a7c5590>]}
+[0m21:53:46.508508 [info ] [Thread-3 (]: 11 of 11 OK created sql table model ANALYTICS.patient_profile_signals .......... [[32mSUCCESS 10[0m in 5.99s]
+[0m21:53:46.510090 [debug] [Thread-3 (]: Finished running node model.dbt_cortex.patient_profile_signals
+[0m21:53:47.982795 [debug] [Thread-4 (]: SQL status: SUCCESS 24 in 7.434 seconds
+[0m21:53:47.987944 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b2677911-f174-4889-b533-0e038994d581', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a7c5750>]}
+[0m21:53:47.989182 [info ] [Thread-4 (]: 10 of 11 OK created sql table model ANALYTICS.care_continuity_trends ........... [[32mSUCCESS 24[0m in 7.47s]
+[0m21:53:47.990243 [debug] [Thread-4 (]: Finished running node model.dbt_cortex.care_continuity_trends
+[0m21:53:49.520415 [debug] [Thread-5 (]: SQL status: SUCCESS 13 in 13.389 seconds
+[0m21:53:49.526099 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b2677911-f174-4889-b533-0e038994d581', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a7c5310>]}
+[0m21:53:49.528601 [info ] [Thread-5 (]: 9 of 11 OK created sql table model ANALYTICS.encounter_risk_analysis ........... [[32mSUCCESS 13[0m in 13.41s]
+[0m21:53:49.529917 [debug] [Thread-5 (]: Finished running node model.dbt_cortex.encounter_risk_analysis
+[0m21:53:49.532869 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:53:49.533406 [debug] [MainThread]: Connection 'model.dbt_cortex.clinical_insight_summaries' was left open.
+[0m21:53:49.533897 [debug] [MainThread]: On model.dbt_cortex.clinical_insight_summaries: Close
+[0m21:53:49.710802 [debug] [MainThread]: Connection 'model.dbt_cortex.patient_profile_signals' was left open.
+[0m21:53:49.711681 [debug] [MainThread]: On model.dbt_cortex.patient_profile_signals: Close
+[0m21:53:49.865008 [debug] [MainThread]: Connection 'model.dbt_cortex.care_continuity_trends' was left open.
+[0m21:53:49.865879 [debug] [MainThread]: On model.dbt_cortex.care_continuity_trends: Close
+[0m21:53:50.048300 [debug] [MainThread]: Connection 'model.dbt_cortex.encounter_risk_analysis' was left open.
+[0m21:53:50.049122 [debug] [MainThread]: On model.dbt_cortex.encounter_risk_analysis: Close
+[0m21:53:50.268161 [info ] [MainThread]: 
+[0m21:53:50.269495 [info ] [MainThread]: Finished running 7 table models, 4 view models in 0 hours 0 minutes and 18.40 seconds (18.40s).
+[0m21:53:50.273574 [debug] [MainThread]: Command end result
+[0m21:53:50.328497 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/juliancharlankelly/aster-analytics/dbt/target/manifest.json
+[0m21:53:50.331316 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/juliancharlankelly/aster-analytics/dbt/target/semantic_manifest.json
+[0m21:53:50.336426 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/juliancharlankelly/aster-analytics/dbt/target/run_results.json
+[0m21:53:50.336633 [info ] [MainThread]: 
+[0m21:53:50.336861 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:53:50.337019 [info ] [MainThread]: 
+[0m21:53:50.337220 [info ] [MainThread]: Done. PASS=11 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=11
+[0m21:53:50.340458 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 19.317276, "process_in_blocks": "0", "process_kernel_time": 0.391534, "process_mem_max_rss": "178307072", "process_out_blocks": "0", "process_user_time": 2.347152}
+[0m21:53:50.340770 [debug] [MainThread]: Command `dbt run` succeeded at 21:53:50.340724 after 19.32 seconds
+[0m21:53:50.341055 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064e3910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102a72010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071c7f10>]}
+[0m21:53:50.341233 [debug] [MainThread]: Flushing usage events
+[0m21:53:50.828710 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:55:35.183510 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10297afd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105877a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105877f10>]}
+
+
+============================== 21:55:35.186398 | 777e3012-3fed-400c-9eb0-20e9009f4405 ==============================
+[0m21:55:35.186398 [info ] [MainThread]: Running with dbt=1.11.11
+[0m21:55:35.186680 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'quiet': 'False', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'profiles_dir': '/Users/juliancharlankelly/.dbt', 'version_check': 'True', 'debug': 'False', 'write_json': 'True', 'static_parser': 'True', 'fail_fast': 'False', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'warn_error': 'None', 'no_print': 'None', 'empty': 'False', 'cache_selected_only': 'False', 'log_path': '/Users/juliancharlankelly/aster-analytics/dbt/logs', 'introspect': 'True', 'printer_width': '80', 'log_format': 'default', 'target_path': 'None', 'log_cache_events': 'False'}
+[0m21:55:35.388224 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m21:55:35.388497 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m21:55:35.388640 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m21:55:35.489137 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '777e3012-3fed-400c-9eb0-20e9009f4405', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10754f990>]}
+[0m21:55:35.522104 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '777e3012-3fed-400c-9eb0-20e9009f4405', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056978d0>]}
+[0m21:55:35.522662 [info ] [MainThread]: Registered adapter: snowflake=1.11.6
+[0m21:55:35.581513 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m21:55:35.663165 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m21:55:35.663418 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m21:55:35.663539 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m21:55:35.666279 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_cortex.semantic
+[0m21:55:35.684063 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '777e3012-3fed-400c-9eb0-20e9009f4405', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104961d90>]}
+[0m21:55:35.732329 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/juliancharlankelly/aster-analytics/dbt/target/manifest.json
+[0m21:55:35.733731 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/juliancharlankelly/aster-analytics/dbt/target/semantic_manifest.json
+[0m21:55:35.740331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '777e3012-3fed-400c-9eb0-20e9009f4405', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107554710>]}
+[0m21:55:35.740556 [info ] [MainThread]: Found 11 models, 8 data tests, 4 sources, 538 macros
+[0m21:55:35.740696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '777e3012-3fed-400c-9eb0-20e9009f4405', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075aa010>]}
+[0m21:55:35.741638 [info ] [MainThread]: 
+[0m21:55:35.741787 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m21:55:35.741900 [info ] [MainThread]: 
+[0m21:55:35.742097 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m21:55:35.744150 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_CORTEX_LLMS'
+[0m21:55:35.744361 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_CORTEX_LLMS'
+[0m21:55:35.808407 [debug] [ThreadPool]: Using snowflake connection "list_DBT_CORTEX_LLMS"
+[0m21:55:35.808644 [debug] [ThreadPool]: Using snowflake connection "list_DBT_CORTEX_LLMS"
+[0m21:55:35.808844 [debug] [ThreadPool]: On list_DBT_CORTEX_LLMS: show terse schemas in database DBT_CORTEX_LLMS
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "connection_name": "list_DBT_CORTEX_LLMS"} */
+[0m21:55:35.808998 [debug] [ThreadPool]: On list_DBT_CORTEX_LLMS: show terse schemas in database DBT_CORTEX_LLMS
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "connection_name": "list_DBT_CORTEX_LLMS"} */
+[0m21:55:35.809147 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:55:35.809285 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:55:36.698529 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.889 seconds
+[0m21:55:36.707103 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.898 seconds
+[0m21:55:36.713342 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DBT_CORTEX_LLMS, now list_DBT_CORTEX_LLMS_STAGE)
+[0m21:55:36.714114 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DBT_CORTEX_LLMS, now list_DBT_CORTEX_LLMS_ANALYTICS)
+[0m21:55:36.732751 [debug] [ThreadPool]: Using snowflake connection "list_DBT_CORTEX_LLMS_STAGE"
+[0m21:55:36.735775 [debug] [ThreadPool]: Using snowflake connection "list_DBT_CORTEX_LLMS_ANALYTICS"
+[0m21:55:36.736284 [debug] [ThreadPool]: On list_DBT_CORTEX_LLMS_STAGE: show objects in DBT_CORTEX_LLMS.STAGE
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "connection_name": "list_DBT_CORTEX_LLMS_STAGE"} */;
+[0m21:55:36.736768 [debug] [ThreadPool]: On list_DBT_CORTEX_LLMS_ANALYTICS: show objects in DBT_CORTEX_LLMS.ANALYTICS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "connection_name": "list_DBT_CORTEX_LLMS_ANALYTICS"} */;
+[0m21:55:36.926041 [debug] [ThreadPool]: SQL status: SUCCESS 16 in 0.189 seconds
+[0m21:55:36.960412 [debug] [ThreadPool]: SQL status: SUCCESS 15 in 0.221 seconds
+[0m21:55:36.967284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '777e3012-3fed-400c-9eb0-20e9009f4405', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b87350>]}
+[0m21:55:36.974983 [debug] [Thread-2 (]: Began running node model.dbt_cortex.stg_care_gaps
+[0m21:55:36.975575 [debug] [Thread-3 (]: Began running node model.dbt_cortex.stg_clinical_encounters
+[0m21:55:36.976024 [debug] [Thread-4 (]: Began running node model.dbt_cortex.stg_lab_results
+[0m21:55:36.976438 [debug] [Thread-5 (]: Began running node model.dbt_cortex.stg_patients
+[0m21:55:36.977144 [info ] [Thread-2 (]: 1 of 11 START sql view model STAGE.stg_care_gaps ............................... [RUN]
+[0m21:55:36.977756 [info ] [Thread-3 (]: 2 of 11 START sql view model STAGE.stg_clinical_encounters ..................... [RUN]
+[0m21:55:36.978286 [info ] [Thread-4 (]: 3 of 11 START sql view model STAGE.stg_lab_results ............................. [RUN]
+[0m21:55:36.978797 [info ] [Thread-5 (]: 4 of 11 START sql view model STAGE.stg_patients ................................ [RUN]
+[0m21:55:36.979340 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_DBT_CORTEX_LLMS_STAGE, now model.dbt_cortex.stg_care_gaps)
+[0m21:55:36.979756 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_DBT_CORTEX_LLMS_ANALYTICS, now model.dbt_cortex.stg_clinical_encounters)
+[0m21:55:36.980270 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.dbt_cortex.stg_lab_results'
+[0m21:55:36.980754 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.dbt_cortex.stg_patients'
+[0m21:55:36.981138 [debug] [Thread-2 (]: Began compiling node model.dbt_cortex.stg_care_gaps
+[0m21:55:36.981497 [debug] [Thread-3 (]: Began compiling node model.dbt_cortex.stg_clinical_encounters
+[0m21:55:36.981809 [debug] [Thread-4 (]: Began compiling node model.dbt_cortex.stg_lab_results
+[0m21:55:36.982094 [debug] [Thread-5 (]: Began compiling node model.dbt_cortex.stg_patients
+[0m21:55:36.991515 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_cortex.stg_care_gaps"
+[0m21:55:36.994258 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_cortex.stg_clinical_encounters"
+[0m21:55:36.996564 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_cortex.stg_lab_results"
+[0m21:55:36.998963 [debug] [Thread-5 (]: Writing injected SQL for node "model.dbt_cortex.stg_patients"
+[0m21:55:37.000087 [debug] [Thread-2 (]: Began executing node model.dbt_cortex.stg_care_gaps
+[0m21:55:37.000418 [debug] [Thread-4 (]: Began executing node model.dbt_cortex.stg_lab_results
+[0m21:55:37.000761 [debug] [Thread-5 (]: Began executing node model.dbt_cortex.stg_patients
+[0m21:55:37.001044 [debug] [Thread-3 (]: Began executing node model.dbt_cortex.stg_clinical_encounters
+[0m21:55:37.020540 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_cortex.stg_care_gaps"
+[0m21:55:37.022063 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_cortex.stg_lab_results"
+[0m21:55:37.023543 [debug] [Thread-5 (]: Writing runtime sql for node "model.dbt_cortex.stg_patients"
+[0m21:55:37.024919 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_cortex.stg_clinical_encounters"
+[0m21:55:37.025735 [debug] [Thread-4 (]: Using snowflake connection "model.dbt_cortex.stg_lab_results"
+[0m21:55:37.026135 [debug] [Thread-5 (]: Using snowflake connection "model.dbt_cortex.stg_patients"
+[0m21:55:37.026388 [debug] [Thread-4 (]: On model.dbt_cortex.stg_lab_results: create or replace   view DBT_CORTEX_LLMS.STAGE.stg_lab_results
+  
+  
+  
+  
+  as (
+    -- Staging model for lab results with LOINC standardization
+SELECT
+    lab_id,
+    patient_id,
+    collection_date,
+    facility,
+    country,
+    test_name,
+    loinc_code,
+    result_value,
+    unit,
+    reference_range,
+    flag,
+    source_format
+FROM DBT_CORTEX_LLMS.STAGE.lab_results
+  )
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.stg_lab_results"} */;
+[0m21:55:37.026832 [debug] [Thread-3 (]: Using snowflake connection "model.dbt_cortex.stg_clinical_encounters"
+[0m21:55:37.027221 [debug] [Thread-2 (]: Using snowflake connection "model.dbt_cortex.stg_care_gaps"
+[0m21:55:37.027393 [debug] [Thread-5 (]: On model.dbt_cortex.stg_patients: create or replace   view DBT_CORTEX_LLMS.STAGE.stg_patients
+  
+  
+  
+  
+  as (
+    -- Staging model for cross-border patient registry
+SELECT
+    patient_id,
+    full_name,
+    date_of_birth,
+    country_of_origin,
+    primary_language,
+    immigration_year,
+    current_mrn,
+    origin_mrn,
+    insurance_status
+FROM DBT_CORTEX_LLMS.STAGE.patients
+  )
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.stg_patients"} */;
+[0m21:55:37.027579 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m21:55:37.027783 [debug] [Thread-3 (]: On model.dbt_cortex.stg_clinical_encounters: create or replace   view DBT_CORTEX_LLMS.STAGE.stg_clinical_encounters
+  
+  
+  
+  
+  as (
+    -- Staging model for clinical encounters across borders
+SELECT
+    encounter_id,
+    patient_id,
+    encounter_date,
+    facility,
+    country,
+    encounter_type,
+    provider_name,
+    chief_complaint,
+    assessment,
+    plan,
+    source_format
+FROM DBT_CORTEX_LLMS.STAGE.clinical_encounters
+  )
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.stg_clinical_encounters"} */;
+[0m21:55:37.027989 [debug] [Thread-2 (]: On model.dbt_cortex.stg_care_gaps: create or replace   view DBT_CORTEX_LLMS.STAGE.stg_care_gaps
+  
+  
+  
+  
+  as (
+    -- Staging model for care gaps from cross-border fragmentation
+SELECT
+    gap_id,
+    patient_id,
+    identified_date,
+    gap_type,
+    description,
+    severity,
+    origin_country,
+    us_provider_aware,
+    status
+FROM DBT_CORTEX_LLMS.STAGE.care_gaps
+  )
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.stg_care_gaps"} */;
+[0m21:55:37.028168 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m21:55:37.396454 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.368 seconds
+[0m21:55:37.419161 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '777e3012-3fed-400c-9eb0-20e9009f4405', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1081db350>]}
+[0m21:55:37.419742 [info ] [Thread-2 (]: 1 of 11 OK created sql view model STAGE.stg_care_gaps .......................... [[32mSUCCESS 1[0m in 0.44s]
+[0m21:55:37.420171 [debug] [Thread-2 (]: Finished running node model.dbt_cortex.stg_care_gaps
+[0m21:55:37.467892 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.439 seconds
+[0m21:55:37.469962 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '777e3012-3fed-400c-9eb0-20e9009f4405', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a38d90>]}
+[0m21:55:37.470945 [info ] [Thread-3 (]: 2 of 11 OK created sql view model STAGE.stg_clinical_encounters ................ [[32mSUCCESS 1[0m in 0.49s]
+[0m21:55:37.472616 [debug] [Thread-3 (]: Finished running node model.dbt_cortex.stg_clinical_encounters
+[0m21:55:37.855666 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.827 seconds
+[0m21:55:37.856887 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.829 seconds
+[0m21:55:37.860488 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '777e3012-3fed-400c-9eb0-20e9009f4405', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1081f5790>]}
+[0m21:55:37.863200 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '777e3012-3fed-400c-9eb0-20e9009f4405', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1081f6090>]}
+[0m21:55:37.864229 [info ] [Thread-5 (]: 4 of 11 OK created sql view model STAGE.stg_patients ........................... [[32mSUCCESS 1[0m in 0.88s]
+[0m21:55:37.864968 [info ] [Thread-4 (]: 3 of 11 OK created sql view model STAGE.stg_lab_results ........................ [[32mSUCCESS 1[0m in 0.88s]
+[0m21:55:37.865632 [debug] [Thread-5 (]: Finished running node model.dbt_cortex.stg_patients
+[0m21:55:37.866154 [debug] [Thread-4 (]: Finished running node model.dbt_cortex.stg_lab_results
+[0m21:55:37.866959 [debug] [Thread-2 (]: Began running node model.dbt_cortex.fact_care_gaps
+[0m21:55:37.867317 [debug] [Thread-4 (]: Began running node model.dbt_cortex.fact_clinical_encounters
+[0m21:55:37.867937 [info ] [Thread-2 (]: 5 of 11 START sql table model ANALYTICS.fact_care_gaps ......................... [RUN]
+[0m21:55:37.868364 [debug] [Thread-5 (]: Began running node model.dbt_cortex.clinical_insight_summaries
+[0m21:55:37.868747 [debug] [Thread-3 (]: Began running node model.dbt_cortex.fact_lab_results
+[0m21:55:37.869173 [info ] [Thread-4 (]: 6 of 11 START sql table model ANALYTICS.fact_clinical_encounters ............... [RUN]
+[0m21:55:37.869693 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_cortex.stg_care_gaps, now model.dbt_cortex.fact_care_gaps)
+[0m21:55:37.870731 [info ] [Thread-5 (]: 7 of 11 START sql table model ANALYTICS.clinical_insight_summaries ............. [RUN]
+[0m21:55:37.871407 [info ] [Thread-3 (]: 8 of 11 START sql table model ANALYTICS.fact_lab_results ....................... [RUN]
+[0m21:55:37.871964 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dbt_cortex.stg_lab_results, now model.dbt_cortex.fact_clinical_encounters)
+[0m21:55:37.872351 [debug] [Thread-2 (]: Began compiling node model.dbt_cortex.fact_care_gaps
+[0m21:55:37.872658 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly model.dbt_cortex.stg_patients, now model.dbt_cortex.clinical_insight_summaries)
+[0m21:55:37.872963 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dbt_cortex.stg_clinical_encounters, now model.dbt_cortex.fact_lab_results)
+[0m21:55:37.873214 [debug] [Thread-4 (]: Began compiling node model.dbt_cortex.fact_clinical_encounters
+[0m21:55:37.877262 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_cortex.fact_care_gaps"
+[0m21:55:37.877828 [debug] [Thread-5 (]: Began compiling node model.dbt_cortex.clinical_insight_summaries
+[0m21:55:37.878230 [debug] [Thread-3 (]: Began compiling node model.dbt_cortex.fact_lab_results
+[0m21:55:37.881421 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_cortex.fact_clinical_encounters"
+[0m21:55:37.884143 [debug] [Thread-5 (]: Writing injected SQL for node "model.dbt_cortex.clinical_insight_summaries"
+[0m21:55:37.886984 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_cortex.fact_lab_results"
+[0m21:55:37.887593 [debug] [Thread-2 (]: Began executing node model.dbt_cortex.fact_care_gaps
+[0m21:55:37.906350 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_cortex.fact_care_gaps"
+[0m21:55:37.906630 [debug] [Thread-5 (]: Began executing node model.dbt_cortex.clinical_insight_summaries
+[0m21:55:37.906864 [debug] [Thread-4 (]: Began executing node model.dbt_cortex.fact_clinical_encounters
+[0m21:55:37.907187 [debug] [Thread-3 (]: Began executing node model.dbt_cortex.fact_lab_results
+[0m21:55:37.908974 [debug] [Thread-5 (]: Writing runtime sql for node "model.dbt_cortex.clinical_insight_summaries"
+[0m21:55:37.910712 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_cortex.fact_clinical_encounters"
+[0m21:55:37.911574 [debug] [Thread-2 (]: Using snowflake connection "model.dbt_cortex.fact_care_gaps"
+[0m21:55:37.914303 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_cortex.fact_lab_results"
+[0m21:55:37.914710 [debug] [Thread-2 (]: On model.dbt_cortex.fact_care_gaps: create or replace transient table DBT_CORTEX_LLMS.ANALYTICS.fact_care_gaps
+    
+    
+    
+    as (-- Fact table joining care gaps with patient context
+SELECT
+    g.gap_id,
+    g.patient_id,
+    p.full_name,
+    p.country_of_origin,
+    p.primary_language,
+    p.insurance_status,
+    g.identified_date,
+    g.gap_type,
+    g.description,
+    g.severity,
+    g.origin_country,
+    g.us_provider_aware,
+    g.status,
+    CASE WHEN g.severity = 'CRITICAL' THEN 1
+         WHEN g.severity = 'HIGH' THEN 2
+         WHEN g.severity = 'MEDIUM' THEN 3
+         ELSE 4 END AS severity_rank,
+    SNOWFLAKE.CORTEX.COMPLETE(
+        'mistral-7b',
+        CONCAT(
+            'You are a clinical care coordinator reviewing a cross-border care gap. ',
+            'Patient: ', p.full_name, ' (', p.country_of_origin, ' -> USA). ',
+            'Gap type: ', g.gap_type, '. Severity: ', g.severity, '. ',
+            'Description: ', g.description, '. ',
+            'Provider aware: ', IFF(g.us_provider_aware, 'Yes', 'No'), '. ',
+            'In 2-3 sentences, summarize the clinical risk and recommended action.'
+        )
+    ) AS gap_analysis
+FROM DBT_CORTEX_LLMS.STAGE.stg_care_gaps g
+LEFT JOIN DBT_CORTEX_LLMS.STAGE.stg_patients p ON g.patient_id = p.patient_id
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.fact_care_gaps"} */;
+[0m21:55:37.915516 [debug] [Thread-4 (]: Using snowflake connection "model.dbt_cortex.fact_clinical_encounters"
+[0m21:55:37.916225 [debug] [Thread-5 (]: Using snowflake connection "model.dbt_cortex.clinical_insight_summaries"
+[0m21:55:37.916590 [debug] [Thread-4 (]: On model.dbt_cortex.fact_clinical_encounters: create or replace transient table DBT_CORTEX_LLMS.ANALYTICS.fact_clinical_encounters
+    
+    
+    
+    as (SELECT
+    e.encounter_id,
+    e.patient_id,
+    p.full_name,
+    p.country_of_origin,
+    p.primary_language,
+    p.immigration_year,
+    e.encounter_date,
+    e.facility,
+    e.country,
+    e.encounter_type,
+    e.provider_name,
+    e.chief_complaint,
+    e.assessment,
+    e.plan,
+    e.source_format,
+    CASE WHEN e.country != p.country_of_origin THEN TRUE ELSE FALSE END AS is_cross_border
+FROM DBT_CORTEX_LLMS.STAGE.stg_clinical_encounters e
+LEFT JOIN DBT_CORTEX_LLMS.STAGE.stg_patients p ON e.patient_id = p.patient_id
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.fact_clinical_encounters"} */;
+[0m21:55:37.917360 [debug] [Thread-3 (]: Using snowflake connection "model.dbt_cortex.fact_lab_results"
+[0m21:55:37.917632 [debug] [Thread-5 (]: On model.dbt_cortex.clinical_insight_summaries: create or replace transient table DBT_CORTEX_LLMS.ANALYTICS.clinical_insight_summaries
+    
+    
+    
+    as (-- Cortex LLM: generate actionable insight summary per patient across all data
+SELECT
+    l.patient_id,
+    p.full_name,
+    COUNT(*) AS total_labs,
+    SUM(CASE WHEN l.flag = 'H' THEN 1 ELSE 0 END) AS abnormal_high,
+    SUM(CASE WHEN l.flag = 'L' THEN 1 ELSE 0 END) AS abnormal_low,
+    SNOWFLAKE.CORTEX.COMPLETE(
+        'mistral-7b',
+        'You are a clinical analyst. Summarize the key lab findings for this patient in 2-3 sentences, highlighting any abnormal results and clinical implications. Labs: ' ||
+        LISTAGG(l.test_name || ': ' || l.result_value || ' ' || COALESCE(l.unit, '') || ' (' || COALESCE(l.flag, 'N') || ')', ', ')
+    ) AS clinical_insight
+FROM DBT_CORTEX_LLMS.STAGE.stg_lab_results l
+LEFT JOIN DBT_CORTEX_LLMS.STAGE.stg_patients p ON l.patient_id = p.patient_id
+GROUP BY l.patient_id, p.full_name
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.clinical_insight_summaries"} */;
+[0m21:55:37.918312 [debug] [Thread-3 (]: On model.dbt_cortex.fact_lab_results: create or replace transient table DBT_CORTEX_LLMS.ANALYTICS.fact_lab_results
+    
+    
+    
+    as (-- Fact table joining labs with patient context
+SELECT
+    l.lab_id,
+    l.patient_id,
+    p.full_name,
+    p.country_of_origin,
+    p.primary_language,
+    l.collection_date,
+    l.facility,
+    l.country,
+    l.test_name,
+    l.loinc_code,
+    l.result_value,
+    l.unit,
+    l.reference_range,
+    l.flag,
+    l.source_format,
+    CASE WHEN l.flag = 'H' THEN 'Elevated'
+         WHEN l.flag = 'L' THEN 'Low'
+         ELSE 'Normal' END AS result_status,
+    CASE WHEN l.country != p.country_of_origin THEN TRUE ELSE FALSE END AS is_cross_border
+FROM DBT_CORTEX_LLMS.STAGE.stg_lab_results l
+LEFT JOIN DBT_CORTEX_LLMS.STAGE.stg_patients p ON l.patient_id = p.patient_id
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.fact_lab_results"} */;
+[0m21:55:39.082748 [debug] [Thread-3 (]: SQL status: SUCCESS 16 in 1.163 seconds
+[0m21:55:39.088240 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '777e3012-3fed-400c-9eb0-20e9009f4405', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078837d0>]}
+[0m21:55:39.090165 [info ] [Thread-3 (]: 8 of 11 OK created sql table model ANALYTICS.fact_lab_results .................. [[32mSUCCESS 16[0m in 1.21s]
+[0m21:55:39.091321 [debug] [Thread-4 (]: SQL status: SUCCESS 13 in 1.173 seconds
+[0m21:55:39.092767 [debug] [Thread-3 (]: Finished running node model.dbt_cortex.fact_lab_results
+[0m21:55:39.095808 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '777e3012-3fed-400c-9eb0-20e9009f4405', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10831fe90>]}
+[0m21:55:39.096971 [info ] [Thread-4 (]: 6 of 11 OK created sql table model ANALYTICS.fact_clinical_encounters .......... [[32mSUCCESS 13[0m in 1.22s]
+[0m21:55:39.097587 [debug] [Thread-4 (]: Finished running node model.dbt_cortex.fact_clinical_encounters
+[0m21:55:39.098252 [debug] [Thread-3 (]: Began running node model.dbt_cortex.encounter_risk_analysis
+[0m21:55:39.098740 [info ] [Thread-3 (]: 9 of 11 START sql table model ANALYTICS.encounter_risk_analysis ................ [RUN]
+[0m21:55:39.099188 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dbt_cortex.fact_lab_results, now model.dbt_cortex.encounter_risk_analysis)
+[0m21:55:39.099541 [debug] [Thread-3 (]: Began compiling node model.dbt_cortex.encounter_risk_analysis
+[0m21:55:39.104373 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_cortex.encounter_risk_analysis"
+[0m21:55:39.106307 [debug] [Thread-3 (]: Began executing node model.dbt_cortex.encounter_risk_analysis
+[0m21:55:39.110626 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_cortex.encounter_risk_analysis"
+[0m21:55:39.112553 [debug] [Thread-3 (]: Using snowflake connection "model.dbt_cortex.encounter_risk_analysis"
+[0m21:55:39.113050 [debug] [Thread-3 (]: On model.dbt_cortex.encounter_risk_analysis: create or replace transient table DBT_CORTEX_LLMS.ANALYTICS.encounter_risk_analysis
+    
+    
+    
+    as (SELECT
+    f.encounter_id,
+    f.patient_id,
+    f.full_name,
+    f.country_of_origin,
+    f.primary_language,
+    f.encounter_date,
+    f.facility,
+    f.country,
+    f.encounter_type,
+    f.provider_name,
+    f.chief_complaint,
+    f.assessment,
+    f.plan,
+    f.source_format,
+    f.is_cross_border,
+    SNOWFLAKE.CORTEX.COMPLETE(
+        'mistral-7b',
+        'You are a clinical risk analyst. Given this encounter assessment, identify any cross-border care continuity risks in 2-3 sentences. Assessment: ' || f.assessment
+    ) AS risk_analysis
+FROM DBT_CORTEX_LLMS.ANALYTICS.fact_clinical_encounters f
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.encounter_risk_analysis"} */;
+[0m21:55:49.506918 [debug] [Thread-2 (]: SQL status: SUCCESS 28 in 11.589 seconds
+[0m21:55:49.518413 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '777e3012-3fed-400c-9eb0-20e9009f4405', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10788bed0>]}
+[0m21:55:49.519527 [info ] [Thread-2 (]: 5 of 11 OK created sql table model ANALYTICS.fact_care_gaps .................... [[32mSUCCESS 28[0m in 11.65s]
+[0m21:55:49.520042 [debug] [Thread-2 (]: Finished running node model.dbt_cortex.fact_care_gaps
+[0m21:55:49.521168 [debug] [Thread-4 (]: Began running node model.dbt_cortex.care_continuity_trends
+[0m21:55:49.521513 [debug] [Thread-2 (]: Began running node model.dbt_cortex.patient_profile_signals
+[0m21:55:49.521795 [info ] [Thread-4 (]: 10 of 11 START sql table model ANALYTICS.care_continuity_trends ................ [RUN]
+[0m21:55:49.522075 [info ] [Thread-2 (]: 11 of 11 START sql table model ANALYTICS.patient_profile_signals ............... [RUN]
+[0m21:55:49.522409 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dbt_cortex.fact_clinical_encounters, now model.dbt_cortex.care_continuity_trends)
+[0m21:55:49.522603 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_cortex.fact_care_gaps, now model.dbt_cortex.patient_profile_signals)
+[0m21:55:49.522799 [debug] [Thread-4 (]: Began compiling node model.dbt_cortex.care_continuity_trends
+[0m21:55:49.522968 [debug] [Thread-2 (]: Began compiling node model.dbt_cortex.patient_profile_signals
+[0m21:55:49.526459 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_cortex.care_continuity_trends"
+[0m21:55:49.528391 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_cortex.patient_profile_signals"
+[0m21:55:49.528997 [debug] [Thread-2 (]: Began executing node model.dbt_cortex.patient_profile_signals
+[0m21:55:49.529214 [debug] [Thread-4 (]: Began executing node model.dbt_cortex.care_continuity_trends
+[0m21:55:49.531040 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_cortex.patient_profile_signals"
+[0m21:55:49.532523 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_cortex.care_continuity_trends"
+[0m21:55:49.533784 [debug] [Thread-5 (]: SQL status: SUCCESS 9 in 11.615 seconds
+[0m21:55:49.534873 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '777e3012-3fed-400c-9eb0-20e9009f4405', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10823e750>]}
+[0m21:55:49.536134 [debug] [Thread-2 (]: Using snowflake connection "model.dbt_cortex.patient_profile_signals"
+[0m21:55:49.536463 [info ] [Thread-5 (]: 7 of 11 OK created sql table model ANALYTICS.clinical_insight_summaries ........ [[32mSUCCESS 9[0m in 11.66s]
+[0m21:55:49.537016 [debug] [Thread-4 (]: Using snowflake connection "model.dbt_cortex.care_continuity_trends"
+[0m21:55:49.537296 [debug] [Thread-2 (]: On model.dbt_cortex.patient_profile_signals: create or replace transient table DBT_CORTEX_LLMS.ANALYTICS.patient_profile_signals
+    
+    
+    
+    as (-- Cortex LLM: synthesize a clinical profile signal per patient
+WITH encounter_agg AS (
+    SELECT
+        patient_id,
+        COUNT(*) AS total_encounters,
+        COUNT(CASE WHEN is_cross_border THEN 1 END) AS cross_border_encounters,
+        MIN(encounter_date) AS first_encounter,
+        MAX(encounter_date) AS last_encounter,
+        LISTAGG(assessment, ' | ') AS all_assessments
+    FROM DBT_CORTEX_LLMS.ANALYTICS.fact_clinical_encounters
+    GROUP BY patient_id
+),
+gap_agg AS (
+    SELECT
+        patient_id,
+        COUNT(*) AS total_gaps,
+        COUNT(CASE WHEN severity IN ('CRITICAL','HIGH') THEN 1 END) AS high_severity_gaps,
+        LISTAGG(gap_type, ', ') AS gap_types
+    FROM DBT_CORTEX_LLMS.ANALYTICS.fact_care_gaps
+    GROUP BY patient_id
+)
+SELECT
+    p.patient_id,
+    p.full_name,
+    p.country_of_origin,
+    p.primary_language,
+    p.insurance_status,
+    p.immigration_year,
+    e.total_encounters,
+    e.cross_border_encounters,
+    e.first_encounter,
+    e.last_encounter,
+    g.total_gaps,
+    g.high_severity_gaps,
+    g.gap_types,
+    SNOWFLAKE.CORTEX.COMPLETE('mixtral-8x7b',
+        CONCAT(
+            'You are a care coordinator building a patient profile for a cross-border immigrant patient. ',
+            'Patient immigrated from ', p.country_of_origin, ' in ', p.immigration_year::VARCHAR, '. ',
+            'Language: ', p.primary_language, '. Insurance: ', p.insurance_status, '. ',
+            'They have ', e.total_encounters::VARCHAR, ' recorded encounters and ',
+            g.total_gaps::VARCHAR, ' care gaps including ', g.high_severity_gaps::VARCHAR, ' high severity. ',
+            'Gap types: ', COALESCE(g.gap_types, 'none'), '. ',
+            'Clinical history: ', COALESCE(e.all_assessments, 'none'), '. ',
+            'In 2-3 sentences, summarize this patient''s care continuity profile and top priority. ',
+            'Be direct and clinical.'
+        )
+    ) AS patient_profile
+FROM DBT_CORTEX_LLMS.STAGE.stg_patients p
+LEFT JOIN encounter_agg e ON p.patient_id = e.patient_id
+LEFT JOIN gap_agg g ON p.patient_id = g.patient_id
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.patient_profile_signals"} */;
+[0m21:55:49.537620 [debug] [Thread-5 (]: Finished running node model.dbt_cortex.clinical_insight_summaries
+[0m21:55:49.537825 [debug] [Thread-4 (]: On model.dbt_cortex.care_continuity_trends: create or replace transient table DBT_CORTEX_LLMS.ANALYTICS.care_continuity_trends
+    
+    
+    
+    as (-- Care continuity trend analysis: cross-border gap patterns by country and type
+SELECT
+    g.origin_country,
+    g.gap_type,
+    COUNT(*) AS gap_count,
+    ROUND(
+        SUM(CASE WHEN g.us_provider_aware = FALSE THEN 1 ELSE 0 END) * 100.0 / COUNT(*),
+        1
+    ) AS pct_provider_unaware,
+    SNOWFLAKE.CORTEX.COMPLETE(
+        'mistral-7b',
+        'You are a health equity analyst. Given this pattern of care gaps, summarize the systemic risk in 2 sentences. Country: ' || g.origin_country ||
+        ', Gap type: ' || g.gap_type ||
+        ', Total gaps: ' || COUNT(*) ||
+        ', Provider unaware rate: ' || ROUND(SUM(CASE WHEN g.us_provider_aware = FALSE THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 1) || '%'
+    ) AS trend_insight
+FROM DBT_CORTEX_LLMS.ANALYTICS.fact_care_gaps g
+GROUP BY g.origin_country, g.gap_type
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.care_continuity_trends"} */;
+[0m21:55:50.416722 [debug] [Thread-3 (]: SQL status: SUCCESS 13 in 11.303 seconds
+[0m21:55:50.423062 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '777e3012-3fed-400c-9eb0-20e9009f4405', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1082da450>]}
+[0m21:55:50.424620 [info ] [Thread-3 (]: 9 of 11 OK created sql table model ANALYTICS.encounter_risk_analysis ........... [[32mSUCCESS 13[0m in 11.32s]
+[0m21:55:50.425872 [debug] [Thread-3 (]: Finished running node model.dbt_cortex.encounter_risk_analysis
+[0m21:55:53.111990 [debug] [Thread-4 (]: SQL status: SUCCESS 24 in 3.573 seconds
+[0m21:55:53.118006 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '777e3012-3fed-400c-9eb0-20e9009f4405', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1081fafd0>]}
+[0m21:55:53.119607 [info ] [Thread-4 (]: 10 of 11 OK created sql table model ANALYTICS.care_continuity_trends ........... [[32mSUCCESS 24[0m in 3.60s]
+[0m21:55:53.120617 [debug] [Thread-4 (]: Finished running node model.dbt_cortex.care_continuity_trends
+[0m21:55:55.159894 [debug] [Thread-2 (]: SQL status: SUCCESS 10 in 5.622 seconds
+[0m21:55:55.164858 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '777e3012-3fed-400c-9eb0-20e9009f4405', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ef9790>]}
+[0m21:55:55.166861 [info ] [Thread-2 (]: 11 of 11 OK created sql table model ANALYTICS.patient_profile_signals .......... [[32mSUCCESS 10[0m in 5.64s]
+[0m21:55:55.167827 [debug] [Thread-2 (]: Finished running node model.dbt_cortex.patient_profile_signals
+[0m21:55:55.179215 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:55:55.181002 [debug] [MainThread]: Connection 'model.dbt_cortex.patient_profile_signals' was left open.
+[0m21:55:55.181729 [debug] [MainThread]: On model.dbt_cortex.patient_profile_signals: Close
+[0m21:55:55.357933 [debug] [MainThread]: Connection 'model.dbt_cortex.encounter_risk_analysis' was left open.
+[0m21:55:55.358794 [debug] [MainThread]: On model.dbt_cortex.encounter_risk_analysis: Close
+[0m21:55:55.524986 [debug] [MainThread]: Connection 'model.dbt_cortex.care_continuity_trends' was left open.
+[0m21:55:55.526272 [debug] [MainThread]: On model.dbt_cortex.care_continuity_trends: Close
+[0m21:55:55.735647 [debug] [MainThread]: Connection 'model.dbt_cortex.clinical_insight_summaries' was left open.
+[0m21:55:55.737183 [debug] [MainThread]: On model.dbt_cortex.clinical_insight_summaries: Close
+[0m21:55:55.905901 [info ] [MainThread]: 
+[0m21:55:55.908062 [info ] [MainThread]: Finished running 7 table models, 4 view models in 0 hours 0 minutes and 20.16 seconds (20.16s).
+[0m21:55:55.911964 [debug] [MainThread]: Command end result
+[0m21:55:55.959167 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/juliancharlankelly/aster-analytics/dbt/target/manifest.json
+[0m21:55:55.961520 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/juliancharlankelly/aster-analytics/dbt/target/semantic_manifest.json
+[0m21:55:55.966616 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/juliancharlankelly/aster-analytics/dbt/target/run_results.json
+[0m21:55:55.966828 [info ] [MainThread]: 
+[0m21:55:55.967074 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:55:55.967241 [info ] [MainThread]: 
+[0m21:55:55.967439 [info ] [MainThread]: Done. PASS=11 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=11
+[0m21:55:55.970756 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 20.831686, "process_in_blocks": "0", "process_kernel_time": 0.365122, "process_mem_max_rss": "181436416", "process_out_blocks": "0", "process_user_time": 2.116263}
+[0m21:55:55.971132 [debug] [MainThread]: Command `dbt run` succeeded at 21:55:55.971074 after 20.83 seconds
+[0m21:55:55.971438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105868f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x101198150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x101176010>]}
+[0m21:55:55.971640 [debug] [MainThread]: Flushing usage events
+[0m21:55:56.567909 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:18:20.741182 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10519ef90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105287990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105287e90>]}
+
+
+============================== 22:18:20.744532 | c06bb8fe-c566-4be3-ac75-ea376c0f895e ==============================
+[0m22:18:20.744532 [info ] [MainThread]: Running with dbt=1.11.11
+[0m22:18:20.744877 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/Users/juliancharlankelly/.dbt', 'static_parser': 'True', 'invocation_command': 'dbt run', 'write_json': 'True', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'empty': 'False', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'no_print': 'None', 'fail_fast': 'False', 'indirect_selection': 'eager', 'target_path': 'None', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/Users/juliancharlankelly/aster-analytics/dbt/logs', 'use_colors': 'True', 'cache_selected_only': 'False', 'introspect': 'True', 'quiet': 'False'}
+[0m22:18:20.970508 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m22:18:20.970787 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m22:18:20.970930 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m22:18:21.076685 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c06bb8fe-c566-4be3-ac75-ea376c0f895e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1043548d0>]}
+[0m22:18:21.112929 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c06bb8fe-c566-4be3-ac75-ea376c0f895e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1050a78d0>]}
+[0m22:18:21.113696 [info ] [MainThread]: Registered adapter: snowflake=1.11.6
+[0m22:18:21.181043 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m22:18:21.282114 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:18:21.282452 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m22:18:21.282605 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:18:21.287577 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_cortex.semantic
+[0m22:18:21.313028 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c06bb8fe-c566-4be3-ac75-ea376c0f895e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10723fb10>]}
+[0m22:18:21.365754 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/juliancharlankelly/aster-analytics/dbt/target/manifest.json
+[0m22:18:21.367581 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/juliancharlankelly/aster-analytics/dbt/target/semantic_manifest.json
+[0m22:18:21.376371 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c06bb8fe-c566-4be3-ac75-ea376c0f895e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f35010>]}
+[0m22:18:21.376678 [info ] [MainThread]: Found 11 models, 8 data tests, 4 sources, 538 macros
+[0m22:18:21.376842 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c06bb8fe-c566-4be3-ac75-ea376c0f895e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10740cf10>]}
+[0m22:18:21.377943 [info ] [MainThread]: 
+[0m22:18:21.378109 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m22:18:21.378233 [info ] [MainThread]: 
+[0m22:18:21.378491 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m22:18:21.380762 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_CORTEX_LLMS'
+[0m22:18:21.380978 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_CORTEX_LLMS'
+[0m22:18:21.481289 [debug] [ThreadPool]: Using snowflake connection "list_DBT_CORTEX_LLMS"
+[0m22:18:21.481572 [debug] [ThreadPool]: Using snowflake connection "list_DBT_CORTEX_LLMS"
+[0m22:18:21.481808 [debug] [ThreadPool]: On list_DBT_CORTEX_LLMS: show terse schemas in database DBT_CORTEX_LLMS
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "connection_name": "list_DBT_CORTEX_LLMS"} */
+[0m22:18:21.482020 [debug] [ThreadPool]: On list_DBT_CORTEX_LLMS: show terse schemas in database DBT_CORTEX_LLMS
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "connection_name": "list_DBT_CORTEX_LLMS"} */
+[0m22:18:21.482194 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:18:21.482341 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:18:22.504870 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.022 seconds
+[0m22:18:22.546984 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.064 seconds
+[0m22:18:22.551295 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DBT_CORTEX_LLMS, now list_DBT_CORTEX_LLMS_STAGE)
+[0m22:18:22.551905 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DBT_CORTEX_LLMS, now list_DBT_CORTEX_LLMS_ANALYTICS)
+[0m22:18:22.573399 [debug] [ThreadPool]: Using snowflake connection "list_DBT_CORTEX_LLMS_STAGE"
+[0m22:18:22.576123 [debug] [ThreadPool]: Using snowflake connection "list_DBT_CORTEX_LLMS_ANALYTICS"
+[0m22:18:22.576412 [debug] [ThreadPool]: On list_DBT_CORTEX_LLMS_STAGE: show objects in DBT_CORTEX_LLMS.STAGE
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "connection_name": "list_DBT_CORTEX_LLMS_STAGE"} */;
+[0m22:18:22.576587 [debug] [ThreadPool]: On list_DBT_CORTEX_LLMS_ANALYTICS: show objects in DBT_CORTEX_LLMS.ANALYTICS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "connection_name": "list_DBT_CORTEX_LLMS_ANALYTICS"} */;
+[0m22:18:22.819082 [debug] [ThreadPool]: SQL status: SUCCESS 16 in 0.242 seconds
+[0m22:18:22.832691 [debug] [ThreadPool]: SQL status: SUCCESS 15 in 0.255 seconds
+[0m22:18:22.838956 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c06bb8fe-c566-4be3-ac75-ea376c0f895e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1023622d0>]}
+[0m22:18:22.844065 [debug] [Thread-2 (]: Began running node model.dbt_cortex.stg_care_gaps
+[0m22:18:22.844606 [debug] [Thread-3 (]: Began running node model.dbt_cortex.stg_clinical_encounters
+[0m22:18:22.845060 [debug] [Thread-4 (]: Began running node model.dbt_cortex.stg_lab_results
+[0m22:18:22.845485 [debug] [Thread-5 (]: Began running node model.dbt_cortex.stg_patients
+[0m22:18:22.846150 [info ] [Thread-2 (]: 1 of 11 START sql view model STAGE.stg_care_gaps ............................... [RUN]
+[0m22:18:22.846823 [info ] [Thread-3 (]: 2 of 11 START sql view model STAGE.stg_clinical_encounters ..................... [RUN]
+[0m22:18:22.847394 [info ] [Thread-4 (]: 3 of 11 START sql view model STAGE.stg_lab_results ............................. [RUN]
+[0m22:18:22.847950 [info ] [Thread-5 (]: 4 of 11 START sql view model STAGE.stg_patients ................................ [RUN]
+[0m22:18:22.848510 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_DBT_CORTEX_LLMS_STAGE, now model.dbt_cortex.stg_care_gaps)
+[0m22:18:22.848928 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_DBT_CORTEX_LLMS_ANALYTICS, now model.dbt_cortex.stg_clinical_encounters)
+[0m22:18:22.849429 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.dbt_cortex.stg_lab_results'
+[0m22:18:22.849880 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.dbt_cortex.stg_patients'
+[0m22:18:22.850263 [debug] [Thread-2 (]: Began compiling node model.dbt_cortex.stg_care_gaps
+[0m22:18:22.850621 [debug] [Thread-3 (]: Began compiling node model.dbt_cortex.stg_clinical_encounters
+[0m22:18:22.850970 [debug] [Thread-4 (]: Began compiling node model.dbt_cortex.stg_lab_results
+[0m22:18:22.851300 [debug] [Thread-5 (]: Began compiling node model.dbt_cortex.stg_patients
+[0m22:18:22.861308 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_cortex.stg_care_gaps"
+[0m22:18:22.863671 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_cortex.stg_clinical_encounters"
+[0m22:18:22.865931 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_cortex.stg_lab_results"
+[0m22:18:22.868073 [debug] [Thread-5 (]: Writing injected SQL for node "model.dbt_cortex.stg_patients"
+[0m22:18:22.869033 [debug] [Thread-3 (]: Began executing node model.dbt_cortex.stg_clinical_encounters
+[0m22:18:22.869317 [debug] [Thread-4 (]: Began executing node model.dbt_cortex.stg_lab_results
+[0m22:18:22.869536 [debug] [Thread-5 (]: Began executing node model.dbt_cortex.stg_patients
+[0m22:18:22.869777 [debug] [Thread-2 (]: Began executing node model.dbt_cortex.stg_care_gaps
+[0m22:18:22.888129 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_cortex.stg_clinical_encounters"
+[0m22:18:22.889621 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_cortex.stg_lab_results"
+[0m22:18:22.890976 [debug] [Thread-5 (]: Writing runtime sql for node "model.dbt_cortex.stg_patients"
+[0m22:18:22.892323 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_cortex.stg_care_gaps"
+[0m22:18:22.893040 [debug] [Thread-4 (]: Using snowflake connection "model.dbt_cortex.stg_lab_results"
+[0m22:18:22.893467 [debug] [Thread-3 (]: Using snowflake connection "model.dbt_cortex.stg_clinical_encounters"
+[0m22:18:22.893834 [debug] [Thread-5 (]: Using snowflake connection "model.dbt_cortex.stg_patients"
+[0m22:18:22.894166 [debug] [Thread-2 (]: Using snowflake connection "model.dbt_cortex.stg_care_gaps"
+[0m22:18:22.894335 [debug] [Thread-4 (]: On model.dbt_cortex.stg_lab_results: create or replace   view DBT_CORTEX_LLMS.STAGE.stg_lab_results
+  
+  
+  
+  
+  as (
+    -- Staging model for lab results with LOINC standardization
+SELECT
+    lab_id,
+    patient_id,
+    collection_date,
+    facility,
+    country,
+    test_name,
+    loinc_code,
+    result_value,
+    unit,
+    reference_range,
+    flag,
+    source_format
+FROM DBT_CORTEX_LLMS.STAGE.lab_results
+  )
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.stg_lab_results"} */;
+[0m22:18:22.894546 [debug] [Thread-3 (]: On model.dbt_cortex.stg_clinical_encounters: create or replace   view DBT_CORTEX_LLMS.STAGE.stg_clinical_encounters
+  
+  
+  
+  
+  as (
+    -- Staging model for clinical encounters across borders
+SELECT
+    encounter_id,
+    patient_id,
+    encounter_date,
+    facility,
+    country,
+    encounter_type,
+    provider_name,
+    chief_complaint,
+    assessment,
+    plan,
+    source_format
+FROM DBT_CORTEX_LLMS.STAGE.clinical_encounters
+  )
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.stg_clinical_encounters"} */;
+[0m22:18:22.894736 [debug] [Thread-5 (]: On model.dbt_cortex.stg_patients: create or replace   view DBT_CORTEX_LLMS.STAGE.stg_patients
+  
+  
+  
+  
+  as (
+    -- Staging model for cross-border patient registry
+SELECT
+    patient_id,
+    full_name,
+    date_of_birth,
+    country_of_origin,
+    primary_language,
+    immigration_year,
+    current_mrn,
+    origin_mrn,
+    insurance_status
+FROM DBT_CORTEX_LLMS.STAGE.patients
+  )
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.stg_patients"} */;
+[0m22:18:22.894919 [debug] [Thread-2 (]: On model.dbt_cortex.stg_care_gaps: create or replace   view DBT_CORTEX_LLMS.STAGE.stg_care_gaps
+  
+  
+  
+  
+  as (
+    -- Staging model for care gaps from cross-border fragmentation
+SELECT
+    gap_id,
+    patient_id,
+    identified_date,
+    gap_type,
+    description,
+    severity,
+    origin_country,
+    us_provider_aware,
+    status
+FROM DBT_CORTEX_LLMS.STAGE.care_gaps
+  )
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.stg_care_gaps"} */;
+[0m22:18:22.895094 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m22:18:22.895582 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m22:18:23.256718 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.361 seconds
+[0m22:18:23.274529 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.379 seconds
+[0m22:18:23.275976 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c06bb8fe-c566-4be3-ac75-ea376c0f895e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106db8b50>]}
+[0m22:18:23.276187 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c06bb8fe-c566-4be3-ac75-ea376c0f895e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10519df90>]}
+[0m22:18:23.276568 [info ] [Thread-3 (]: 2 of 11 OK created sql view model STAGE.stg_clinical_encounters ................ [[32mSUCCESS 1[0m in 0.42s]
+[0m22:18:23.276908 [info ] [Thread-2 (]: 1 of 11 OK created sql view model STAGE.stg_care_gaps .......................... [[32mSUCCESS 1[0m in 0.43s]
+[0m22:18:23.277202 [debug] [Thread-3 (]: Finished running node model.dbt_cortex.stg_clinical_encounters
+[0m22:18:23.277453 [debug] [Thread-2 (]: Finished running node model.dbt_cortex.stg_care_gaps
+[0m22:18:23.852815 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.957 seconds
+[0m22:18:23.857396 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c06bb8fe-c566-4be3-ac75-ea376c0f895e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a362d0>]}
+[0m22:18:23.858827 [info ] [Thread-4 (]: 3 of 11 OK created sql view model STAGE.stg_lab_results ........................ [[32mSUCCESS 1[0m in 1.01s]
+[0m22:18:23.860068 [debug] [Thread-4 (]: Finished running node model.dbt_cortex.stg_lab_results
+[0m22:18:24.032610 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 1.137 seconds
+[0m22:18:24.041529 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c06bb8fe-c566-4be3-ac75-ea376c0f895e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107bb16d0>]}
+[0m22:18:24.043307 [info ] [Thread-5 (]: 4 of 11 OK created sql view model STAGE.stg_patients ........................... [[32mSUCCESS 1[0m in 1.19s]
+[0m22:18:24.044383 [debug] [Thread-5 (]: Finished running node model.dbt_cortex.stg_patients
+[0m22:18:24.046371 [debug] [Thread-3 (]: Began running node model.dbt_cortex.clinical_insight_summaries
+[0m22:18:24.046838 [debug] [Thread-2 (]: Began running node model.dbt_cortex.fact_care_gaps
+[0m22:18:24.047524 [debug] [Thread-4 (]: Began running node model.dbt_cortex.fact_clinical_encounters
+[0m22:18:24.048031 [debug] [Thread-5 (]: Began running node model.dbt_cortex.fact_lab_results
+[0m22:18:24.048626 [info ] [Thread-3 (]: 5 of 11 START sql table model ANALYTICS.clinical_insight_summaries ............. [RUN]
+[0m22:18:24.049165 [info ] [Thread-2 (]: 6 of 11 START sql table model ANALYTICS.fact_care_gaps ......................... [RUN]
+[0m22:18:24.049748 [info ] [Thread-4 (]: 7 of 11 START sql table model ANALYTICS.fact_clinical_encounters ............... [RUN]
+[0m22:18:24.050777 [info ] [Thread-5 (]: 8 of 11 START sql table model ANALYTICS.fact_lab_results ....................... [RUN]
+[0m22:18:24.051761 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dbt_cortex.stg_clinical_encounters, now model.dbt_cortex.clinical_insight_summaries)
+[0m22:18:24.052263 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_cortex.stg_care_gaps, now model.dbt_cortex.fact_care_gaps)
+[0m22:18:24.052673 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dbt_cortex.stg_lab_results, now model.dbt_cortex.fact_clinical_encounters)
+[0m22:18:24.053115 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly model.dbt_cortex.stg_patients, now model.dbt_cortex.fact_lab_results)
+[0m22:18:24.053645 [debug] [Thread-3 (]: Began compiling node model.dbt_cortex.clinical_insight_summaries
+[0m22:18:24.054175 [debug] [Thread-2 (]: Began compiling node model.dbt_cortex.fact_care_gaps
+[0m22:18:24.054608 [debug] [Thread-4 (]: Began compiling node model.dbt_cortex.fact_clinical_encounters
+[0m22:18:24.055011 [debug] [Thread-5 (]: Began compiling node model.dbt_cortex.fact_lab_results
+[0m22:18:24.063023 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_cortex.clinical_insight_summaries"
+[0m22:18:24.067696 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_cortex.fact_care_gaps"
+[0m22:18:24.071170 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_cortex.fact_clinical_encounters"
+[0m22:18:24.074295 [debug] [Thread-5 (]: Writing injected SQL for node "model.dbt_cortex.fact_lab_results"
+[0m22:18:24.075645 [debug] [Thread-4 (]: Began executing node model.dbt_cortex.fact_clinical_encounters
+[0m22:18:24.076037 [debug] [Thread-2 (]: Began executing node model.dbt_cortex.fact_care_gaps
+[0m22:18:24.081723 [debug] [Thread-3 (]: Began executing node model.dbt_cortex.clinical_insight_summaries
+[0m22:18:24.082036 [debug] [Thread-5 (]: Began executing node model.dbt_cortex.fact_lab_results
+[0m22:18:24.097138 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_cortex.fact_clinical_encounters"
+[0m22:18:24.099039 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_cortex.fact_care_gaps"
+[0m22:18:24.100819 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_cortex.clinical_insight_summaries"
+[0m22:18:24.103805 [debug] [Thread-5 (]: Writing runtime sql for node "model.dbt_cortex.fact_lab_results"
+[0m22:18:24.105134 [debug] [Thread-4 (]: Using snowflake connection "model.dbt_cortex.fact_clinical_encounters"
+[0m22:18:24.105893 [debug] [Thread-2 (]: Using snowflake connection "model.dbt_cortex.fact_care_gaps"
+[0m22:18:24.106492 [debug] [Thread-3 (]: Using snowflake connection "model.dbt_cortex.clinical_insight_summaries"
+[0m22:18:24.106728 [debug] [Thread-4 (]: On model.dbt_cortex.fact_clinical_encounters: create or replace transient table DBT_CORTEX_LLMS.ANALYTICS.fact_clinical_encounters
+    
+    
+    
+    as (SELECT
+    e.encounter_id,
+    e.patient_id,
+    p.full_name,
+    p.country_of_origin,
+    p.primary_language,
+    p.immigration_year,
+    e.encounter_date,
+    e.facility,
+    e.country,
+    e.encounter_type,
+    e.provider_name,
+    e.chief_complaint,
+    e.assessment,
+    e.plan,
+    e.source_format,
+    CASE WHEN e.country != p.country_of_origin THEN TRUE ELSE FALSE END AS is_cross_border
+FROM DBT_CORTEX_LLMS.STAGE.stg_clinical_encounters e
+LEFT JOIN DBT_CORTEX_LLMS.STAGE.stg_patients p ON e.patient_id = p.patient_id
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.fact_clinical_encounters"} */;
+[0m22:18:24.107014 [debug] [Thread-2 (]: On model.dbt_cortex.fact_care_gaps: create or replace transient table DBT_CORTEX_LLMS.ANALYTICS.fact_care_gaps
+    
+    
+    
+    as (-- Fact table joining care gaps with patient context
+SELECT
+    g.gap_id,
+    g.patient_id,
+    p.full_name,
+    p.country_of_origin,
+    p.primary_language,
+    p.insurance_status,
+    g.identified_date,
+    g.gap_type,
+    g.description,
+    g.severity,
+    g.origin_country,
+    g.us_provider_aware,
+    g.status,
+    CASE WHEN g.severity = 'CRITICAL' THEN 1
+         WHEN g.severity = 'HIGH' THEN 2
+         WHEN g.severity = 'MEDIUM' THEN 3
+         ELSE 4 END AS severity_rank,
+    SNOWFLAKE.CORTEX.COMPLETE(
+        'mistral-7b',
+        CONCAT(
+            'You are a clinical care coordinator reviewing a cross-border care gap. ',
+            'Patient: ', p.full_name, ' (', p.country_of_origin, ' -> USA). ',
+            'Gap type: ', g.gap_type, '. Severity: ', g.severity, '. ',
+            'Description: ', g.description, '. ',
+            'Provider aware: ', IFF(g.us_provider_aware, 'Yes', 'No'), '. ',
+            'In 2-3 sentences, summarize the clinical risk and recommended action.'
+        )
+    ) AS gap_analysis
+FROM DBT_CORTEX_LLMS.STAGE.stg_care_gaps g
+LEFT JOIN DBT_CORTEX_LLMS.STAGE.stg_patients p ON g.patient_id = p.patient_id
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.fact_care_gaps"} */;
+[0m22:18:24.107670 [debug] [Thread-5 (]: Using snowflake connection "model.dbt_cortex.fact_lab_results"
+[0m22:18:24.107909 [debug] [Thread-3 (]: On model.dbt_cortex.clinical_insight_summaries: create or replace transient table DBT_CORTEX_LLMS.ANALYTICS.clinical_insight_summaries
+    
+    
+    
+    as (-- Cortex LLM: generate actionable insight summary per patient across all data
+SELECT
+    l.patient_id,
+    p.full_name,
+    COUNT(*) AS total_labs,
+    SUM(CASE WHEN l.flag = 'H' THEN 1 ELSE 0 END) AS abnormal_high,
+    SUM(CASE WHEN l.flag = 'L' THEN 1 ELSE 0 END) AS abnormal_low,
+    SNOWFLAKE.CORTEX.COMPLETE(
+        'mistral-7b',
+        'You are a clinical analyst. Summarize the key lab findings for this patient in 2-3 sentences, highlighting any abnormal results and clinical implications. Labs: ' ||
+        LISTAGG(l.test_name || ': ' || l.result_value || ' ' || COALESCE(l.unit, '') || ' (' || COALESCE(l.flag, 'N') || ')', ', ')
+    ) AS clinical_insight
+FROM DBT_CORTEX_LLMS.STAGE.stg_lab_results l
+LEFT JOIN DBT_CORTEX_LLMS.STAGE.stg_patients p ON l.patient_id = p.patient_id
+GROUP BY l.patient_id, p.full_name
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.clinical_insight_summaries"} */;
+[0m22:18:24.108992 [debug] [Thread-5 (]: On model.dbt_cortex.fact_lab_results: create or replace transient table DBT_CORTEX_LLMS.ANALYTICS.fact_lab_results
+    
+    
+    
+    as (-- Fact table joining labs with patient context
+SELECT
+    l.lab_id,
+    l.patient_id,
+    p.full_name,
+    p.country_of_origin,
+    p.primary_language,
+    l.collection_date,
+    l.facility,
+    l.country,
+    l.test_name,
+    l.loinc_code,
+    l.result_value,
+    l.unit,
+    l.reference_range,
+    l.flag,
+    l.source_format,
+    CASE WHEN l.flag = 'H' THEN 'Elevated'
+         WHEN l.flag = 'L' THEN 'Low'
+         ELSE 'Normal' END AS result_status,
+    CASE WHEN l.country != p.country_of_origin THEN TRUE ELSE FALSE END AS is_cross_border
+FROM DBT_CORTEX_LLMS.STAGE.stg_lab_results l
+LEFT JOIN DBT_CORTEX_LLMS.STAGE.stg_patients p ON l.patient_id = p.patient_id
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.fact_lab_results"} */;
+[0m22:18:25.309283 [debug] [Thread-5 (]: SQL status: SUCCESS 16 in 1.199 seconds
+[0m22:18:25.318941 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c06bb8fe-c566-4be3-ac75-ea376c0f895e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10788b110>]}
+[0m22:18:25.320607 [info ] [Thread-5 (]: 8 of 11 OK created sql table model ANALYTICS.fact_lab_results .................. [[32mSUCCESS 16[0m in 1.27s]
+[0m22:18:25.321506 [debug] [Thread-5 (]: Finished running node model.dbt_cortex.fact_lab_results
+[0m22:18:25.376028 [debug] [Thread-4 (]: SQL status: SUCCESS 13 in 1.267 seconds
+[0m22:18:25.383398 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c06bb8fe-c566-4be3-ac75-ea376c0f895e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c58790>]}
+[0m22:18:25.384869 [info ] [Thread-4 (]: 7 of 11 OK created sql table model ANALYTICS.fact_clinical_encounters .......... [[32mSUCCESS 13[0m in 1.33s]
+[0m22:18:25.385948 [debug] [Thread-4 (]: Finished running node model.dbt_cortex.fact_clinical_encounters
+[0m22:18:25.387026 [debug] [Thread-5 (]: Began running node model.dbt_cortex.encounter_risk_analysis
+[0m22:18:25.387787 [info ] [Thread-5 (]: 9 of 11 START sql table model ANALYTICS.encounter_risk_analysis ................ [RUN]
+[0m22:18:25.388430 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly model.dbt_cortex.fact_lab_results, now model.dbt_cortex.encounter_risk_analysis)
+[0m22:18:25.388918 [debug] [Thread-5 (]: Began compiling node model.dbt_cortex.encounter_risk_analysis
+[0m22:18:25.396356 [debug] [Thread-5 (]: Writing injected SQL for node "model.dbt_cortex.encounter_risk_analysis"
+[0m22:18:25.399556 [debug] [Thread-5 (]: Began executing node model.dbt_cortex.encounter_risk_analysis
+[0m22:18:25.404202 [debug] [Thread-5 (]: Writing runtime sql for node "model.dbt_cortex.encounter_risk_analysis"
+[0m22:18:25.406293 [debug] [Thread-5 (]: Using snowflake connection "model.dbt_cortex.encounter_risk_analysis"
+[0m22:18:25.406830 [debug] [Thread-5 (]: On model.dbt_cortex.encounter_risk_analysis: create or replace transient table DBT_CORTEX_LLMS.ANALYTICS.encounter_risk_analysis
+    
+    
+    
+    as (SELECT
+    f.encounter_id,
+    f.patient_id,
+    f.full_name,
+    f.country_of_origin,
+    f.primary_language,
+    f.encounter_date,
+    f.facility,
+    f.country,
+    f.encounter_type,
+    f.provider_name,
+    f.chief_complaint,
+    f.assessment,
+    f.plan,
+    f.source_format,
+    f.is_cross_border,
+    SNOWFLAKE.CORTEX.COMPLETE(
+        'mistral-7b',
+        'You are a clinical risk analyst. Given this encounter assessment, identify any cross-border care continuity risks in 2-3 sentences. Assessment: ' || f.assessment
+    ) AS risk_analysis
+FROM DBT_CORTEX_LLMS.ANALYTICS.fact_clinical_encounters f
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.encounter_risk_analysis"} */;
+[0m22:18:29.709848 [debug] [Thread-3 (]: SQL status: SUCCESS 9 in 5.600 seconds
+[0m22:18:29.713151 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c06bb8fe-c566-4be3-ac75-ea376c0f895e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c5b810>]}
+[0m22:18:29.714016 [info ] [Thread-3 (]: 5 of 11 OK created sql table model ANALYTICS.clinical_insight_summaries ........ [[32mSUCCESS 9[0m in 5.66s]
+[0m22:18:29.714692 [debug] [Thread-3 (]: Finished running node model.dbt_cortex.clinical_insight_summaries
+[0m22:18:29.778685 [debug] [Thread-2 (]: SQL status: SUCCESS 28 in 5.670 seconds
+[0m22:18:29.781260 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c06bb8fe-c566-4be3-ac75-ea376c0f895e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c94cd0>]}
+[0m22:18:29.782204 [info ] [Thread-2 (]: 6 of 11 OK created sql table model ANALYTICS.fact_care_gaps .................... [[32mSUCCESS 28[0m in 5.73s]
+[0m22:18:29.782868 [debug] [Thread-2 (]: Finished running node model.dbt_cortex.fact_care_gaps
+[0m22:18:29.783584 [debug] [Thread-4 (]: Began running node model.dbt_cortex.care_continuity_trends
+[0m22:18:29.784104 [debug] [Thread-3 (]: Began running node model.dbt_cortex.patient_profile_signals
+[0m22:18:29.784686 [info ] [Thread-4 (]: 10 of 11 START sql table model ANALYTICS.care_continuity_trends ................ [RUN]
+[0m22:18:29.785262 [info ] [Thread-3 (]: 11 of 11 START sql table model ANALYTICS.patient_profile_signals ............... [RUN]
+[0m22:18:29.785768 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dbt_cortex.fact_clinical_encounters, now model.dbt_cortex.care_continuity_trends)
+[0m22:18:29.786188 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dbt_cortex.clinical_insight_summaries, now model.dbt_cortex.patient_profile_signals)
+[0m22:18:29.786587 [debug] [Thread-4 (]: Began compiling node model.dbt_cortex.care_continuity_trends
+[0m22:18:29.786958 [debug] [Thread-3 (]: Began compiling node model.dbt_cortex.patient_profile_signals
+[0m22:18:29.791280 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_cortex.care_continuity_trends"
+[0m22:18:29.794731 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_cortex.patient_profile_signals"
+[0m22:18:29.795800 [debug] [Thread-4 (]: Began executing node model.dbt_cortex.care_continuity_trends
+[0m22:18:29.796136 [debug] [Thread-3 (]: Began executing node model.dbt_cortex.patient_profile_signals
+[0m22:18:29.798918 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_cortex.care_continuity_trends"
+[0m22:18:29.801042 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_cortex.patient_profile_signals"
+[0m22:18:29.803149 [debug] [Thread-3 (]: Using snowflake connection "model.dbt_cortex.patient_profile_signals"
+[0m22:18:29.804049 [debug] [Thread-4 (]: Using snowflake connection "model.dbt_cortex.care_continuity_trends"
+[0m22:18:29.804433 [debug] [Thread-3 (]: On model.dbt_cortex.patient_profile_signals: create or replace transient table DBT_CORTEX_LLMS.ANALYTICS.patient_profile_signals
+    
+    
+    
+    as (-- Cortex LLM: synthesize a clinical profile signal per patient
+WITH encounter_agg AS (
+    SELECT
+        patient_id,
+        COUNT(*) AS total_encounters,
+        COUNT(CASE WHEN is_cross_border THEN 1 END) AS cross_border_encounters,
+        MIN(encounter_date) AS first_encounter,
+        MAX(encounter_date) AS last_encounter,
+        LISTAGG(assessment, ' | ') AS all_assessments
+    FROM DBT_CORTEX_LLMS.ANALYTICS.fact_clinical_encounters
+    GROUP BY patient_id
+),
+gap_agg AS (
+    SELECT
+        patient_id,
+        COUNT(*) AS total_gaps,
+        COUNT(CASE WHEN severity IN ('CRITICAL','HIGH') THEN 1 END) AS high_severity_gaps,
+        LISTAGG(gap_type, ', ') AS gap_types
+    FROM DBT_CORTEX_LLMS.ANALYTICS.fact_care_gaps
+    GROUP BY patient_id
+)
+SELECT
+    p.patient_id,
+    p.full_name,
+    p.country_of_origin,
+    p.primary_language,
+    p.insurance_status,
+    p.immigration_year,
+    e.total_encounters,
+    e.cross_border_encounters,
+    e.first_encounter,
+    e.last_encounter,
+    g.total_gaps,
+    g.high_severity_gaps,
+    g.gap_types,
+    SNOWFLAKE.CORTEX.COMPLETE('mixtral-8x7b',
+        CONCAT(
+            'You are a care coordinator building a patient profile for a cross-border immigrant patient. ',
+            'Patient immigrated from ', p.country_of_origin, ' in ', p.immigration_year::VARCHAR, '. ',
+            'Language: ', p.primary_language, '. Insurance: ', p.insurance_status, '. ',
+            'They have ', e.total_encounters::VARCHAR, ' recorded encounters and ',
+            g.total_gaps::VARCHAR, ' care gaps including ', g.high_severity_gaps::VARCHAR, ' high severity. ',
+            'Gap types: ', COALESCE(g.gap_types, 'none'), '. ',
+            'Clinical history: ', COALESCE(e.all_assessments, 'none'), '. ',
+            'In 2-3 sentences, summarize this patient''s care continuity profile and top priority. ',
+            'Be direct and clinical.'
+        )
+    ) AS patient_profile
+FROM DBT_CORTEX_LLMS.STAGE.stg_patients p
+LEFT JOIN encounter_agg e ON p.patient_id = e.patient_id
+LEFT JOIN gap_agg g ON p.patient_id = g.patient_id
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.patient_profile_signals"} */;
+[0m22:18:29.804896 [debug] [Thread-4 (]: On model.dbt_cortex.care_continuity_trends: create or replace transient table DBT_CORTEX_LLMS.ANALYTICS.care_continuity_trends
+    
+    
+    
+    as (-- Care continuity trend analysis: cross-border gap patterns by country and type
+SELECT
+    g.origin_country,
+    g.gap_type,
+    COUNT(*) AS gap_count,
+    ROUND(
+        SUM(CASE WHEN g.us_provider_aware = FALSE THEN 1 ELSE 0 END) * 100.0 / COUNT(*),
+        1
+    ) AS pct_provider_unaware,
+    SNOWFLAKE.CORTEX.COMPLETE(
+        'mistral-7b',
+        'You are a health equity analyst. Given this pattern of care gaps, summarize the systemic risk in 2 sentences. Country: ' || g.origin_country ||
+        ', Gap type: ' || g.gap_type ||
+        ', Total gaps: ' || COUNT(*) ||
+        ', Provider unaware rate: ' || ROUND(SUM(CASE WHEN g.us_provider_aware = FALSE THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 1) || '%'
+    ) AS trend_insight
+FROM DBT_CORTEX_LLMS.ANALYTICS.fact_care_gaps g
+GROUP BY g.origin_country, g.gap_type
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_cortex", "target_name": "dev", "node_id": "model.dbt_cortex.care_continuity_trends"} */;
+[0m22:18:32.874020 [debug] [Thread-5 (]: SQL status: SUCCESS 13 in 7.466 seconds
+[0m22:18:32.882653 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c06bb8fe-c566-4be3-ac75-ea376c0f895e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a10450>]}
+[0m22:18:32.883908 [info ] [Thread-5 (]: 9 of 11 OK created sql table model ANALYTICS.encounter_risk_analysis ........... [[32mSUCCESS 13[0m in 7.49s]
+[0m22:18:32.884400 [debug] [Thread-5 (]: Finished running node model.dbt_cortex.encounter_risk_analysis
+[0m22:18:35.091216 [debug] [Thread-4 (]: SQL status: SUCCESS 24 in 5.285 seconds
+[0m22:18:35.098763 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c06bb8fe-c566-4be3-ac75-ea376c0f895e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1079f8f50>]}
+[0m22:18:35.100329 [info ] [Thread-4 (]: 10 of 11 OK created sql table model ANALYTICS.care_continuity_trends ........... [[32mSUCCESS 24[0m in 5.31s]
+[0m22:18:35.101339 [debug] [Thread-4 (]: Finished running node model.dbt_cortex.care_continuity_trends
+[0m22:18:35.550494 [debug] [Thread-3 (]: SQL status: SUCCESS 10 in 5.745 seconds
+[0m22:18:35.556200 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c06bb8fe-c566-4be3-ac75-ea376c0f895e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c86010>]}
+[0m22:18:35.557523 [info ] [Thread-3 (]: 11 of 11 OK created sql table model ANALYTICS.patient_profile_signals .......... [[32mSUCCESS 10[0m in 5.77s]
+[0m22:18:35.558383 [debug] [Thread-3 (]: Finished running node model.dbt_cortex.patient_profile_signals
+[0m22:18:35.563742 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:18:35.564551 [debug] [MainThread]: Connection 'model.dbt_cortex.fact_care_gaps' was left open.
+[0m22:18:35.565222 [debug] [MainThread]: On model.dbt_cortex.fact_care_gaps: Close
+[0m22:18:35.744812 [debug] [MainThread]: Connection 'model.dbt_cortex.patient_profile_signals' was left open.
+[0m22:18:35.745122 [debug] [MainThread]: On model.dbt_cortex.patient_profile_signals: Close
+[0m22:18:35.900873 [debug] [MainThread]: Connection 'model.dbt_cortex.care_continuity_trends' was left open.
+[0m22:18:35.901361 [debug] [MainThread]: On model.dbt_cortex.care_continuity_trends: Close
+[0m22:18:36.073907 [debug] [MainThread]: Connection 'model.dbt_cortex.encounter_risk_analysis' was left open.
+[0m22:18:36.074370 [debug] [MainThread]: On model.dbt_cortex.encounter_risk_analysis: Close
+[0m22:18:36.272041 [info ] [MainThread]: 
+[0m22:18:36.273307 [info ] [MainThread]: Finished running 7 table models, 4 view models in 0 hours 0 minutes and 14.89 seconds (14.89s).
+[0m22:18:36.276742 [debug] [MainThread]: Command end result
+[0m22:18:36.328153 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/juliancharlankelly/aster-analytics/dbt/target/manifest.json
+[0m22:18:36.335671 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/juliancharlankelly/aster-analytics/dbt/target/semantic_manifest.json
+[0m22:18:36.340729 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/juliancharlankelly/aster-analytics/dbt/target/run_results.json
+[0m22:18:36.340919 [info ] [MainThread]: 
+[0m22:18:36.341147 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:18:36.341315 [info ] [MainThread]: 
+[0m22:18:36.341498 [info ] [MainThread]: Done. PASS=11 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=11
+[0m22:18:36.344881 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 15.655556, "process_in_blocks": "0", "process_kernel_time": 0.43294, "process_mem_max_rss": "176259072", "process_out_blocks": "0", "process_user_time": 2.207213}
+[0m22:18:36.345272 [debug] [MainThread]: Command `dbt run` succeeded at 22:18:36.345211 after 15.66 seconds
+[0m22:18:36.345609 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105279890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x100a58150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x100a36010>]}
+[0m22:18:36.345814 [debug] [MainThread]: Flushing usage events
+[0m22:18:36.922632 [debug] [MainThread]: An error was encountered while trying to flush usage events
